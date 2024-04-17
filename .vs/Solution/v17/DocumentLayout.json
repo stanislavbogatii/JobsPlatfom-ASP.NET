@@ -1,0 +1,700 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application\\extensions\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\extensions\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\sessionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\sessionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\core\\adminapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\core\\adminapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.businesslogic\\core\\sessionapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\core\\sessionapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F0FA67-6A00-4A5C-945A-76BAD879F4A5}|Application.Helpers\\Application.Helpers.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.helpers\\cookiegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F0FA67-6A00-4A5C-945A-76BAD879F4A5}|Application.Helpers\\Application.Helpers.csproj|solutionrelative:application.helpers\\cookiegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F0FA67-6A00-4A5C-945A-76BAD879F4A5}|Application.Helpers\\Application.Helpers.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.helpers\\hashgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F0FA67-6A00-4A5C-945A-76BAD879F4A5}|Application.Helpers\\Application.Helpers.csproj|solutionrelative:application.helpers\\hashgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\interfaces\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\interfaces\\isession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.businesslogic\\dbmodel\\sessioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\dbmodel\\sessioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\dbmodel\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\dbmodel\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.domain\\entities\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|c:\\users\\user\\desktop\\projects\\jobsplatfom\\application.domain\\entities\\user\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\user\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.domain\\enum\\urole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\enum\\urole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.domain\\entities\\response\\uregisterresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\response\\uregisterresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.domain\\entities\\response\\uloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\response\\uloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.domain\\entities\\user\\uregisterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\user\\uregisterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.domain\\entities\\user\\ulogindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\user\\ulogindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.domain\\entities\\user\\udbtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6DDA18-23D3-4DCC-B38D-D84AA022B8B2}|Application.Domain\\Application.Domain.csproj|solutionrelative:application.domain\\entities\\user\\udbtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\models\\user\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\models\\user\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application.businesslogic\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5852D8F9-F8D1-4477-A13F-C127EBBEE6E1}|Application.BusinessLogic\\Application.BusinessLogic.csproj|solutionrelative:application.businesslogic\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\models\\user\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\models\\user\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Solution.Web.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Solution.Web.csproj|solutionrelative:application\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\shared\\_authtemplate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\shared\\_authtemplate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\application\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{709448BF-6D26-4182-84FE-17AE4A6DE7D1}|Application\\Application.csproj|solutionrelative:application\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Application\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T18:44:21.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HttpContextExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Extensions\\HttpContextExtensions.cs",
+              "RelativeDocumentMoniker": "Application\\Extensions\\HttpContextExtensions.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Extensions\\HttpContextExtensions.cs",
+              "RelativeToolTip": "Application\\Extensions\\HttpContextExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T18:42:58.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SessionContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\DBModel\\SessionContext.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\DBModel\\SessionContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\DBModel\\SessionContext.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\DBModel\\SessionContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:59:18.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\User.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\User\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\User.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\User\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:53:09.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserApi.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\Core\\UserApi.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\Core\\UserApi.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAYwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminApi.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\Core\\AdminApi.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\Core\\AdminApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISession.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Interfaces\\ISession.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\Interfaces\\ISession.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Interfaces\\ISession.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\Interfaces\\ISession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionBL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\SessionBL.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\SessionBL.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\SessionBL.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\SessionBL.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Application\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAcwCYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BusinessLogic.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\BusinessLogic.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\BusinessLogic.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\BusinessLogic.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\BusinessLogic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Application\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SessionApi.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Core\\SessionApi.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\Core\\SessionApi.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\Core\\SessionApi.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\Core\\SessionApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T18:01:01.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CookieGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Helpers\\CookieGenerator.cs",
+              "RelativeDocumentMoniker": "Application.Helpers\\CookieGenerator.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Helpers\\CookieGenerator.cs",
+              "RelativeToolTip": "Application.Helpers\\CookieGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T18:27:55.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Application\\Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwBwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HashGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Helpers\\HashGenerator.cs",
+              "RelativeDocumentMoniker": "Application.Helpers\\HashGenerator.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Helpers\\HashGenerator.cs",
+              "RelativeToolTip": "Application.Helpers\\HashGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T18:28:19.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\Session.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\User\\Session.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\Session.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\User\\Session.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:56:45.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "URole.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Enum\\URole.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Enum\\URole.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Enum\\URole.cs",
+              "RelativeToolTip": "Application.Domain\\Enum\\URole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "URegisterResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\Response\\URegisterResponse.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\Response\\URegisterResponse.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\Response\\URegisterResponse.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\Response\\URegisterResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\DBModel\\UserContext.cs",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\DBModel\\UserContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\DBModel\\UserContext.cs",
+              "RelativeToolTip": "Application.BusinessLogic\\DBModel\\UserContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ULoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\Response\\ULoginResponse.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\Response\\ULoginResponse.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\Response\\ULoginResponse.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\Response\\ULoginResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "URegisterData.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\URegisterData.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\User\\URegisterData.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\URegisterData.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\User\\URegisterData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ULoginData.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\ULoginData.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\User\\ULoginData.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\ULoginData.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\User\\ULoginData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UDbTable.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\UDbTable.cs",
+              "RelativeDocumentMoniker": "Application.Domain\\Entities\\User\\UDbTable.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.Domain\\Entities\\User\\UDbTable.cs",
+              "RelativeToolTip": "Application.Domain\\Entities\\User\\UDbTable.cs",
+              "ViewState": "AQIAAAgAAACAXWZmZuYdwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Application\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Global.asax.cs",
+              "RelativeToolTip": "Application\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-04-17T17:21:59.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Models\\User\\UserLogin.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\User\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Models\\User\\UserLogin.cs",
+              "RelativeToolTip": "Application\\Models\\User\\UserLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\packages.config",
+              "RelativeDocumentMoniker": "Application\\packages.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\packages.config",
+              "RelativeToolTip": "Application\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-17T17:21:59.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserRegister.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Models\\User\\UserRegister.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\User\\UserRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Models\\User\\UserRegister.cs",
+              "RelativeToolTip": "Application\\Models\\User\\UserRegister.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Web.config",
+              "RelativeDocumentMoniker": "Application\\Web.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Web.config",
+              "RelativeToolTip": "Application\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-17T17:21:59.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\packages.config",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\packages.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\packages.config",
+              "RelativeToolTip": "Application.BusinessLogic\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-17T17:21:59.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\App.config",
+              "RelativeDocumentMoniker": "Application.BusinessLogic\\App.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application.BusinessLogic\\App.config",
+              "RelativeToolTip": "Application.BusinessLogic\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-17T17:21:59.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "libman.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\libman.json",
+              "RelativeDocumentMoniker": "Application\\libman.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\libman.json",
+              "RelativeToolTip": "Application\\libman.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-17T17:21:59.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Application\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Application\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Application\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Application\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Application\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_AuthTemplate.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Shared\\_AuthTemplate.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_AuthTemplate.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Shared\\_AuthTemplate.cshtml",
+              "RelativeToolTip": "Application\\Views\\Shared\\_AuthTemplate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "Application\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Application\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Register\\Index.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Register\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\Views\\Register\\Index.cshtml",
+              "RelativeToolTip": "Application\\Views\\Register\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-17T17:21:59.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Application\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\JobsPlatfom\\Application\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Application\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:21:59.377Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

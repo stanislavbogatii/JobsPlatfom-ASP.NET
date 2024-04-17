@@ -40,7 +40,8 @@ namespace Application.Controllers
             URegisterResponse response = _session.UserRegistrationAction(data);
             if (response.IsSuccess)
             {
-                Session["Email"] = data.Email;
+                HttpCookie cookie = _session.GenCookie(data.Email);
+                ControllerContext.HttpContext.Response.Cookies.Add(cookie);
                 return RedirectToAction("Index", "Home");
             }
 

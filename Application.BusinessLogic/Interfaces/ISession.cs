@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Application.BusinessLogic.Interfaces
 {
@@ -12,5 +13,8 @@ namespace Application.BusinessLogic.Interfaces
     {
         ULoginResponse UserLoginAction(ULoginData data);
         URegisterResponse UserRegistrationAction(URegisterData data);
+        HttpCookie GenCookie(string Email);
+        User GetUserByCookie(string CookieValue);
+        
     }
 }

@@ -45,7 +45,9 @@ namespace Application.Controllers
             ULoginResponse response = _session.UserLoginAction(data);
             if (response.IsSuccess)
             {
-                Session["Email"] = data.Email;
+                HttpCookie cookie = _session.GenCookie(loginData.Email);
+                ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+                //Session["Email"] = data.Email;
                 return RedirectToAction("Index", "Home");
             }
             return View();

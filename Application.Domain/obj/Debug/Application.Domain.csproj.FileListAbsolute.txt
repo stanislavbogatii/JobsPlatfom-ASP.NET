@@ -13,3 +13,18 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Domain\bin\D
 C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Domain\bin\Debug\EntityFramework.xml
 C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Domain\bin\Debug\Application.Helpers.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Application.Domain.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Application.Domain.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Application.Domain.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Application.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Application.Helpers.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Application.Helpers.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Application.Domain.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Application.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Applicat.23E08B3C.Up2Date
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Application.Domain.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Application.Domain.pdb

@@ -10,3 +10,15 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\
 C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\EntityFramework.xml
 C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\obj\Debug\Application.Helpers.csproj.CopyComplete
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\Application.Helpers.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\Application.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\Application.Helpers.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Application.Helpers.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Application.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Applicat.3B4DF67E.Up2Date
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Application.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Application.Helpers.pdb

@@ -34,3 +34,21 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogi
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.csproj.CopyComplete
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.dll
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.BusinessLogic.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.BusinessLogic.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.BusinessLogic.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.Domain.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.Domain.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.Domain.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.Helpers.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Application.Helpers.dll.config
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Applicat.ECFD7198.Up2Date
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.pdb
