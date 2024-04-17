@@ -1,0 +1,2 @@
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\obj\Debug\Solution.Helper.csproj.AssemblyReference.cache
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\obj\Debug\Solution.Helper.csproj.CoreCompileInputs.cache

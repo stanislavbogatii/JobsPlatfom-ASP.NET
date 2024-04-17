@@ -1,0 +1,12 @@
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\Application.Helpers.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\Application.Helpers.pdb
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\obj\Debug\Application.Helpers.csproj.AssemblyReference.cache
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\obj\Debug\Application.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\obj\Debug\Application.Helpers.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\obj\Debug\Application.Helpers.pdb
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\Application.Helpers.dll.config
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\EntityFramework.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Salution\Application.Helpers\obj\Debug\Application.Helpers.csproj.CopyComplete
