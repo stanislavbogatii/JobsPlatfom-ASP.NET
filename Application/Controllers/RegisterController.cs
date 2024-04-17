@@ -44,8 +44,7 @@ namespace Application.Controllers
                 ControllerContext.HttpContext.Response.Cookies.Add(cookie);
                 return RedirectToAction("Index", "Home");
             }
-
-
+            ViewBag.ErrorMessage = response.Msg;
             return View();
         }
     }

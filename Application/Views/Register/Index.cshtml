@@ -25,10 +25,8 @@
             </div>
 
             <a href="@Url.Action("Index", "Login")">Login</a>
-
-
-
             <button type="submit" class="btn btn-primary w-100">Submit</button>
+            <p class="text-danger">@ViewBag.ErrorMessage</p>
         </div>
     </form>
 }

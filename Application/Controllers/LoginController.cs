@@ -14,7 +14,7 @@ namespace Application.Controllers
     public class LoginController : Controller
     {
         private readonly ISession _session;
-        
+
         public LoginController()
         {
             var bl = new BusinessLogic.BusinessLogic();
@@ -47,9 +47,9 @@ namespace Application.Controllers
             {
                 HttpCookie cookie = _session.GenCookie(loginData.Email);
                 ControllerContext.HttpContext.Response.Cookies.Add(cookie);
-                //Session["Email"] = data.Email;
                 return RedirectToAction("Index", "Home");
             }
+            ViewBag.ErrorMessage = response.Msg;
             return View();
         }
 

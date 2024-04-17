@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Helpers
 {
-    internal class HashGenerator
+    public class HashGenerator
     {
         public static string GenerateHash(string password)
         {

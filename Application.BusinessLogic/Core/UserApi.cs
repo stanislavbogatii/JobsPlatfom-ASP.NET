@@ -20,19 +20,29 @@ namespace Application.BusinessLogic.Core
         {
             UDbTable user;
 
-            //var pass = LoginHelper.HashGen(data.Password);
+            var pass = HashGenerator.GenerateHash(data.Password);
             using (var db = new UserContext())
             {
                 user = db.Users.FirstOrDefault(u => u.Email == data.Email && u.Password == data.Password);
             }
             if (user != null) return new ULoginResponse { IsSuccess = true };
 
-            return new ULoginResponse { IsSuccess = false };
+            return new ULoginResponse { IsSuccess = false, Msg = "Email or Password is not correct" };
         }
 
         public URegisterResponse RRegisterService(URegisterData data)
         {
-            // var pass = LoginHelper.HashGen(data.Password);
+            UDbTable user;
+            using (var db = new UserContext())
+            {
+                user = db.Users.FirstOrDefault(u => u.Email == data.Email);
+            }
+            if (user != null)
+            {
+                return new URegisterResponse { IsSuccess = false, Msg = "User with same email already exist" };
+            }
+
+            var pass = HashGenerator.GenerateHash(data.Password);
 
             var newUser = new UDbTable
             {

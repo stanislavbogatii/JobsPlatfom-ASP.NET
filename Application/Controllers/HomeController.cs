@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Application.Extensions;
+using Application.Domain.Entities.User;
 
 namespace Application.Controllers
 {
@@ -13,7 +15,7 @@ namespace Application.Controllers
         public ActionResult Index()
         {
             SessionStatus();
-            var session = System.Web.HttpContext.Current.Session["__SessionData"];
+            var session = System.Web.HttpContext.Current.GetSessionData();
             if (session == null)
             {
                 return RedirectToAction("Index", "Login");

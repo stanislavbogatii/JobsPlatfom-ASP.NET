@@ -28,3 +28,16 @@ C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Applicat
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Applicat.23E08B3C.Up2Date
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Application.Domain.dll
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\obj\Debug\Application.Domain.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.Razor.xml

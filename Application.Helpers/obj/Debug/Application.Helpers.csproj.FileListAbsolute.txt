@@ -22,3 +22,16 @@ C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Applica
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Applicat.3B4DF67E.Up2Date
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Application.Helpers.dll
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\obj\Debug\Application.Helpers.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.Mvc.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.Razor.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.WebPages.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.Helpers.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.Mvc.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.Razor.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.WebPages.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.Helpers\bin\Debug\System.Web.WebPages.Razor.xml

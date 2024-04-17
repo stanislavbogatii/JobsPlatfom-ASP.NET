@@ -52,3 +52,16 @@ C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\A
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Applicat.ECFD7198.Up2Date
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.dll
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.pdb
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.Helpers.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.Mvc.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.Razor.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.WebPages.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.Helpers.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.Mvc.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.Razor.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.WebPages.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\projects\JobsPlatfom\Application.BusinessLogic\bin\Debug\System.Web.WebPages.Razor.xml
