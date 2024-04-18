@@ -72,6 +72,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Job\Job.cs" />
+    <Compile Include="Entities\Job\JobDbTable.cs" />
     <Compile Include="Entities\Response\ULoginResponse.cs" />
     <Compile Include="Entities\Response\URegisterResponse.cs" />
     <Compile Include="Entities\User\Session.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="Entities\User\ULoginData.cs" />
     <Compile Include="Entities\User\URegisterData.cs" />
     <Compile Include="Entities\User\User.cs" />
+    <Compile Include="Enum\JobModType.cs" />
     <Compile Include="Enum\URole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

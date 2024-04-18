@@ -268,3 +268,6 @@ C:\Users\User\Desktop\projects\JobsPlatfom\Application\obj\Debug\Application.pdb
 C:\Users\User\Desktop\projects\JobsPlatfom\Application\bin\Application.Helpers.dll
 C:\Users\User\Desktop\projects\JobsPlatfom\Application\bin\Application.Helpers.pdb
 C:\Users\User\Desktop\projects\JobsPlatfom\Application\bin\Application.Helpers.dll.config
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application\bin\Application.Helpers.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application\bin\Application.Helpers.pdb
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application\bin\Application.Helpers.dll.config

@@ -41,3 +41,31 @@ C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.W
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.xml
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\User\Desktop\projects\JobsPlatfom\Application.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Application.Domain.dll.config
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Application.Domain.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Application.Domain.pdb
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Application.Helpers.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Application.Helpers.pdb
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\Application.Helpers.dll.config
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\obj\Debug\Application.Domain.csproj.AssemblyReference.cache
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\obj\Debug\Application.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\obj\Debug\Application.Domain.csproj.CopyComplete
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\obj\Debug\Application.Domain.dll
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.Domain\obj\Debug\Application.Domain.pdb

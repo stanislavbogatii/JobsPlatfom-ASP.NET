@@ -22,6 +22,15 @@ namespace Application.Controllers
             _session = bl.GetSessionBL();
         }
 
+        [HttpPost]
+        public ActionResult LogOut()
+        {
+            HttpCookie cookie = ControllerContext.HttpContext.Request.Cookies.Get("X-KEY");
+            Response.Cookies["X-KEY"].Expires = DateTime.Now.AddDays(-1);
+            Session.Clear();
+            return RedirectToAction("Index", "Login");
+        }
+
         public void SessionStatus()
         {
             var cookie = Request.Cookies["X-KEY"];
