@@ -1,4 +1,5 @@
-﻿using Application.Domain.Enum;
+﻿using Application.Domain.Entities.CV;
+using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace Application.Domain.Entities.User
         public DateTime LoginDateTime { get; set; }
         public string LoginIp { get; set; }
         public URole Role { get; set; }
+        public CVDbTable CV { get; set; }
     }
 }

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model Application.Models.User.UserData
+
+<div>
+    <div style="display: flex; gap: 24px">
+        <div style="width: 200px; height: 200px; background-color: gray; border-radius: 25px"></div>
+        <div style="display: flex; flex-direction: column; font-size: 24px">
+            <p style="font-weight: bold">@Html.DisplayFor(u => u.Name)</p>
+            <p style="font-weight: 600">@Html.DisplayFor(u => u.Email)</p>
+        </div>
+    </div>
+</div>
+

@@ -10,7 +10,7 @@ using System.Xml.Linq;
 
 namespace Application.Domain.Entities.Job
 {
-    internal class JobDbTable
+    public class JobDbTable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -23,7 +23,5 @@ namespace Application.Domain.Entities.Job
         [Required]
         [Display(Name = "Mod")]
         public JobModType Mod { get; set; }
-
-            
     }
 }

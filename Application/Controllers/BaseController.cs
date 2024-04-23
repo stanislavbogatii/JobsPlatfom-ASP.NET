@@ -1,6 +1,8 @@
 ﻿using Application.BusinessLogic;
 using Application.BusinessLogic.Interfaces;
+using Application.Domain.Entities.User;
 using Application.Extensions;
+using Application.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +27,6 @@ namespace Application.Controllers
         [HttpPost]
         public ActionResult LogOut()
         {
-            HttpCookie cookie = ControllerContext.HttpContext.Request.Cookies.Get("X-KEY");
             Response.Cookies["X-KEY"].Expires = DateTime.Now.AddDays(-1);
             Session.Clear();
             return RedirectToAction("Index", "Login");
@@ -48,6 +49,7 @@ namespace Application.Controllers
             }
             else
             {
+
                 System.Web.HttpContext.Current.Session.Clear();
                 System.Web.HttpContext.Current.Session["LoginStatus"] = "logout";
             }

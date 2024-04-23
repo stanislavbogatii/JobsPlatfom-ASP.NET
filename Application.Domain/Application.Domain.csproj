@@ -72,6 +72,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\CV\CVDbTable.cs" />
     <Compile Include="Entities\Job\Job.cs" />
     <Compile Include="Entities\Job\JobDbTable.cs" />
     <Compile Include="Entities\Response\ULoginResponse.cs" />

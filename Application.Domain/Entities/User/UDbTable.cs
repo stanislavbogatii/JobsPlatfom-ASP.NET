@@ -1,4 +1,5 @@
-﻿using Application.Domain.Enum;
+﻿using Application.Domain.Entities.CV;
+using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -37,5 +38,7 @@ namespace Application.Domain.Entities.User
         public string LastIp { get; set; }
 
         public URole Role { get; set; }
+
+        public int? CvId { get; set; }
     }
 }
