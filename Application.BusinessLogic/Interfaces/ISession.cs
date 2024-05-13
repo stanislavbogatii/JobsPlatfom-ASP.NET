@@ -1,4 +1,5 @@
-﻿using Application.Domain.Entities.Response;
+﻿using Application.Domain.Entities.CV;
+using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,6 @@ namespace Application.BusinessLogic.Interfaces
         URegisterResponse UserRegistrationAction(URegisterData data);
         HttpCookie GenCookie(string Email);
         User GetUserByCookie(string CookieValue);
-        
+        CreateCVResponse CVCreateAction(CV data);
     }
 }

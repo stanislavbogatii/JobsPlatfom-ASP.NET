@@ -80,7 +80,6 @@ namespace Application.BusinessLogic.Core
             }
             if (curentUser == null) return null;
 
-
             var user = new User
             {
                 Email = curentUser.Email,

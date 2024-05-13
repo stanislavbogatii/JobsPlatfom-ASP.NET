@@ -26,12 +26,22 @@ namespace Application.Domain.Entities.CV
 
     public class Experience
     {
+        public Experience(string name, int duration)
+        {
+            Name = name;
+            Duration = duration;
+        }
         public string Name { get; set; }
         public int Duration { get; set; }
     }
 
     public class Education
     {
+        public Education(string name, int duration)
+        {
+            Name = name;
+            Duration = duration;
+        }
         public string Name { get; set; }
         public int Duration { get; set; }
     }
