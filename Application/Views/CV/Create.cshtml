@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("Create", "CV", FormMethod.Post))
+{
+    <form class="d-flex">
+        <div style="width: 600px;
+         align-self: center;">
+
+            <h3 class="mb-5">Create your CV!</h3>
+
+            <div class="form-group skill-group">
+                <label>Skill</label>
+                <div id="skillsContianer" style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" class="form-control skill-input"  style="max-width: none" placeholder="Skill name" name="skills[]">
+                </div>
+                <button type="button" class="btn btn-primary add-skill-btn w-100 mt-3">Add New Skill</button>
+            </div>
+
+            <div class="form-group experience-group">
+                <label>Experience</label>
+                <div id="experiencesContainer" style="display: flex; flex-direction: column; gap: 10px">
+                    <input type="text" class="form-control experience-input" style="max-width: none" placeholder="Experience name" name="experiences[]">
+                </div>
+                <button type="button" class="btn btn-primary add-experience-btn w-100 mt-3">Add New Experience</button>
+            </div>
+
+            <div class="form-group">
+                <label>Summary</label>
+                <input type="text" class="form-control summary-input" style="max-width: none" placeholder="Summart" name="summary">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Create</button>
+            <p class="text-danger">@ViewBag.ErrorMessage</p>
+        </div>
+    </form>
+}
+
+
+
+<script>
+    $(document).ready(function () {
+        var maxExperiences = 100;
+        var experiencesCount = 1; // Начальное количество полей опыта
+
+        $('.add-experience-btn').click(function () {
+            if (experiencesCount < maxExperiences) {
+                experiencesCount++;
+
+                var newExperienceGroup = '<input type="text" class="form-control experience-input" style="max-width: none" placeholder="Experience name" name="experiences[]">';
+
+                $('#experiencesContainer').append(newExperienceGroup);
+            } else {
+                $('#errorMessage').text('You can add up to ' + maxExperiences + ' experiences.');
+            }
+        });
+
+        $('.add-skill-btn').click(function () {
+            if (experiencesCount < maxExperiences) {
+                experiencesCount++;
+
+                var newExperienceGroup = '<input type="text" class="form-control skill-input" style="max-width: none" placeholder="Skill name" name="skills[]">';
+
+                $('#skillsContianer').append(newExperienceGroup);
+            } else {
+                $('#errorMessage').text('You can add up to ' + maxExperiences + ' skills.');
+            }
+        });
+    });
+</script>
+

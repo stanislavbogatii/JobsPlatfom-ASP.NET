@@ -5,8 +5,10 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using Application.BusinessLogic.DBModel;
 
 
 
@@ -17,6 +19,13 @@ namespace Application.BusinessLogic.DBModel
         public UserContext() :
             base("name=Solution")
         {
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Configurations.Add(new UserDbConfiguration());
         }
         public virtual DbSet<UDbTable> Users { get; set; }
         public virtual DbSet<CVDbTable> CVs { get; set; }

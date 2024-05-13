@@ -11,19 +11,31 @@ namespace Application.Domain.Entities.CV
         public int Id { get; set; }
 
         [Display(Name = "Skills")]
-        public string Skills { get; set; }
+        public string[] Skills { get; set; }
 
         [Display(Name = "Experiences")]
-        public string Experience { get; set; }
+        public Experience[] Experiences { get; set; }
 
-        [Display(Name = "Additional")]
-        public string Additional { get; set; }
+        [Display(Name = "Summary")]
+        public string Summary { get; set; }
 
         [Display(Name = "Educations")]
-        public string Educations { get; set; }
-
-        public int UserId { get; set; }
+        public Education[] Educations { get; set; }
+     
     }
+
+    public class Experience
+    {
+        public string Name { get; set; }
+        public int Duration { get; set; }
+    }
+
+    public class Education
+    {
+        public string Name { get; set; }
+        public int Duration { get; set; }
+    }
+
 }
 
 

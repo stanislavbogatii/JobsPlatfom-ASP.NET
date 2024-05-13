@@ -12,6 +12,9 @@
             <p style="font-weight: bold">@Html.DisplayFor(u => u.Name)</p>
             <p style="font-weight: 600">@Html.DisplayFor(u => u.Email)</p>
         </div>
+        <div class="ml-auto">
+            <button type="submit" class="btn btn-primary w-100" onclick="location.href='@Url.Action("Create", "CV")'">Create CV</button>
+        </div>
     </div>
 </div>
 
