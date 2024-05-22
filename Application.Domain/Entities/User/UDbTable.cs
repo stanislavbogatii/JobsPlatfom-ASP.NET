@@ -40,7 +40,6 @@ namespace Application.Domain.Entities.User
         public URole Role { get; set; }
 
         [ForeignKey("CV")]
-
         public int? CvId { get; set; }
 
         public virtual CVDbTable CV { get; set; }

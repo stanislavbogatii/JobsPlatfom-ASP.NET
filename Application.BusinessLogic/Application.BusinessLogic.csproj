@@ -193,6 +193,18 @@
     <Compile Include="Migrations\202405132010276_Change CV MOdel.designer.cs">
       <DependentUpon>202405132010276_Change CV MOdel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405222110437_CV_update.cs" />
+    <Compile Include="Migrations\202405222110437_CV_update.designer.cs">
+      <DependentUpon>202405222110437_CV_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405222125242_CV_updat.cs" />
+    <Compile Include="Migrations\202405222125242_CV_updat.designer.cs">
+      <DependentUpon>202405222125242_CV_updat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405222151276_CV_updaasdf.cs" />
+    <Compile Include="Migrations\202405222151276_CV_updaasdf.designer.cs">
+      <DependentUpon>202405222151276_CV_updaasdf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
@@ -227,6 +239,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405132010276_Change CV MOdel.resx">
       <DependentUpon>202405132010276_Change CV MOdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405222110437_CV_update.resx">
+      <DependentUpon>202405222110437_CV_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405222125242_CV_updat.resx">
+      <DependentUpon>202405222125242_CV_updat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405222151276_CV_updaasdf.resx">
+      <DependentUpon>202405222151276_CV_updaasdf.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

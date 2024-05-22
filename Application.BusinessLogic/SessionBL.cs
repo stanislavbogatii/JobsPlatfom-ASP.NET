@@ -13,7 +13,7 @@ using System.Web;
 
 namespace Application.BusinessLogic
 {
-    public class SessionBL : ISession
+    public class SessionBL: ISession
     {
 
         private CVApi cvApi;
@@ -25,10 +25,9 @@ namespace Application.BusinessLogic
             this.userApi = new UserApi();
         }
 
-        public CreateCVResponse CVCreateAction(CV data)
+        public CreateCVResponse CVCreateAction(CV data, string userEmail)
         {
-            CreateCVResponse CV = cvApi.CreateCVService(data);
-            throw new NotImplementedException();
+            return cvApi.CreateCVService(data, userEmail);
         }
 
         public HttpCookie GenCookie(string Email)

@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Application.Domain.Entities.User;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Application.Domain.Entities.User;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application.Domain.Entities.CV
 {
@@ -10,42 +11,53 @@ namespace Application.Domain.Entities.CV
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Display(Name = "Skills")]
-        public string[] Skills { get; set; }
-
-        [Display(Name = "Experiences")]
-        public Experience[] Experiences { get; set; }
-
         [Display(Name = "Summary")]
         public string Summary { get; set; }
 
-        [Display(Name = "Educations")]
-        public Education[] Educations { get; set; }
-     
+
+        // Навигационное свойство для навигации к сущности Skill
+        public virtual ICollection<Skill> Skills { get; set; }
+
+        // Навигационное свойство для навигации к сущности Experience
+        public virtual ICollection<Experience> Experiences { get; set; }
+
+        // Навигационное свойство для навигации к сущности Education
+        public virtual ICollection<Education> Educations { get; set; }
+    }
+
+    public class Skill
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Display(Name = "Skill Name")]
+        public string Name { get; set; }
     }
 
     public class Experience
     {
-        public Experience(string name, int duration)
-        {
-            Name = name;
-            Duration = duration;
-        }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Display(Name = "Experience Name")]
         public string Name { get; set; }
+
+        [Display(Name = "Duration")]
         public int Duration { get; set; }
     }
 
     public class Education
     {
-        public Education(string name, int duration)
-        {
-            Name = name;
-            Duration = duration;
-        }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Display(Name = "Education Name")]
         public string Name { get; set; }
+
+        [Display(Name = "Duration")]
         public int Duration { get; set; }
     }
-
 }
-
-

@@ -13,8 +13,17 @@ namespace Application.Models.cv
         [Display(Name = "Skills")]
         public string[] Skills { get; set; }
 
-        [Display(Name = "Experiences")]
-        public string[] Experiences { get; set; }
+        [Display(Name = "ExperienceNames")]
+        public string[] ExperienceNames { get; set; }
+
+        [Display(Name = "ExperienceDurations")]
+        public int[] ExperienceDurations { get; set; }
+
+        [Display(Name = "EducationNames")]
+        public string[] EducationNames { get; set; }
+
+        [Display(Name = "EducationDurations")]
+        public int[] EducationDurations { get; set; }
 
         [Display(Name = "Summary")]
         public string Summary { get; set; }

@@ -1,6 +1,7 @@
 ﻿using Application.BusinessLogic.Interfaces;
 using Application.Domain.Entities.CV;
 using Application.Domain.Entities.Response;
+using Application.Extensions;
 using Application.Models.cv;
 using Microsoft.Ajax.Utilities;
 using System;
@@ -13,7 +14,7 @@ using Experience = Application.Domain.Entities.CV.Experience;
 
 namespace Application.Controllers
 {
-    public class CVController : Controller
+    public class CVController : BaseController
     {
 
         private readonly ISession _session;
@@ -37,38 +38,38 @@ namespace Application.Controllers
         [HttpPost]
         public ActionResult Create(CreateCVModel CVData)
         {
-            Experience[] experiences = new Experience[]
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+            Experience[] experiences = new Experience[CVData.ExperienceDurations.Length];
+            for (int i = 0; i < experiences.Length; i++)
             {
-                new Experience("Software Developer", 2),
-                new Experience("Web Developer", 3),
-                new Experience("Database Administrator", 1)
-                // Добавьте другие объекты Experience по необходимости
-            };
+                experiences[i] = new Experience() { Name = CVData.ExperienceNames[i], Duration = (int)CVData.ExperienceDurations[i] };
+            }
 
-            Education[] educations = new Education[]
+            Education[] educations = new Education[CVData.EducationDurations.Length];
+            for (int i = 0; i < experiences.Length; i++)
             {
-                new Education("Software Developer", 2),
-                new Education("Web Developer", 3),
-                new Education("Database Administrator", 1)
-                // Добавьте другие объекты Experience по необходимости
-            };
+                educations[i] = new Education() { Name = CVData.EducationNames[i], Duration = (int)CVData.EducationDurations[i] };
+            }
+
+            Skill[] skills = new Skill[CVData.Skills.Length];
+            for (int i = 0; i < skills.Length; i++)
+            {
+                skills[i] = new Skill() { Name = CVData.Skills[i] };
+            }
 
             CV newCv = new CV
             {
-                Skills = CVData.Skills,
+                Skills = skills,
                 Experiences = experiences,
                 Summary = CVData.Summary,
                 Educations = educations,
             };
 
-            CreateCVResponse response = _session.CVCreateAction(newCv);
+            CreateCVResponse response = _session.CVCreateAction(newCv, session.Email);
+
             return View();
         }
-
-
-
-
-
 
         public ActionResult Edit()
         {

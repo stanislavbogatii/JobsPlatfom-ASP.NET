@@ -8,7 +8,7 @@ namespace Application.Domain.Entities.CV
     public class CV
     {
 
-        public string[] Skills { get; set; }
+        public Skill[] Skills { get; set; }
 
         public Experience[] Experiences { get; set; }
 

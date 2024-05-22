@@ -1,4 +1,5 @@
 ﻿using Application.BusinessLogic.DBModel;
+using Application.Domain.Entities.CV;
 using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
 using Application.Domain.Enum;
@@ -76,7 +77,12 @@ namespace Application.BusinessLogic.Core
             if (session == null) return null;
             using (var db = new UserContext())
             {
-                curentUser = db.Users.FirstOrDefault(u => u.Email == session.Email);
+                curentUser = db.Users
+                    .Include(u => u.CV)
+                    .Include(u => u.CV.Educations)
+                    .Include(u => u.CV.Skills)
+                    .Include(u => u.CV.Experiences)
+                    .FirstOrDefault(u => u.Email == session.Email);
             }
             if (curentUser == null) return null;
 
