@@ -3,6 +3,7 @@ using Application.Domain.Entities.CV;
 using Application.Domain.Entities.Response;
 using Application.Extensions;
 using Application.Models.cv;
+using Application.Models.User;
 using Microsoft.Ajax.Utilities;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,21 @@ namespace Application.Controllers
             return View();
         }
 
+        public ActionResult Edit()
+        {
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+            if (session == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            UserData userData = new UserData
+            {
+                Cv = session.CV
+            };
+            return View(userData);
+        }
+
         [HttpPost]
         public ActionResult Create(CreateCVModel CVData)
         {
@@ -47,13 +63,13 @@ namespace Application.Controllers
             }
 
             Education[] educations = new Education[CVData.EducationDurations.Length];
-            for (int i = 0; i < experiences.Length; i++)
+            for (int i = 0; i < CVData.EducationDurations.Length; i++)
             {
                 educations[i] = new Education() { Name = CVData.EducationNames[i], Duration = (int)CVData.EducationDurations[i] };
             }
 
             Skill[] skills = new Skill[CVData.Skills.Length];
-            for (int i = 0; i < skills.Length; i++)
+            for (int i = 0; i < CVData.Skills.Length; i++)
             {
                 skills[i] = new Skill() { Name = CVData.Skills[i] };
             }
@@ -67,13 +83,68 @@ namespace Application.Controllers
             };
 
             CreateCVResponse response = _session.CVCreateAction(newCv, session.Email);
-
-            return View();
+            if (response.IsSuccess)
+            {
+                return RedirectToAction("Index", "Profile");
+            } 
+            else
+            {
+                ViewBag.ErrorMessage = response.Msg;
+                return View();
+            }
         }
 
-        public ActionResult Edit()
+        [HttpPost]
+        public ActionResult Edit(EditCVModel CVData)
         {
-            return View();
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+
+            Experience[] experiences = new Experience[CVData.ExperienceDurations.Length];
+            for (int i = 0; i < experiences.Length; i++)
+            {
+                if (!string.IsNullOrEmpty(CVData.ExperienceNames[i]))
+                {
+                    experiences[i] = new Experience() { Name = CVData.ExperienceNames[i], Duration = (int)CVData.ExperienceDurations[i] };
+                }
+            }
+
+            Education[] educations = new Education[CVData.EducationDurations.Length];
+            for (int i = 0; i < CVData.EducationDurations.Length; i++)
+            {
+                if (!string.IsNullOrEmpty(CVData.EducationNames[i]))
+                {
+                    educations[i] = new Education() { Name = CVData.EducationNames[i], Duration = (int)CVData.EducationDurations[i] };
+                }
+            }
+
+            Skill[] skills = new Skill[CVData.Skills.Length];
+            for (int i = 0; i < CVData.Skills.Length; i++)
+            {
+                if (!string.IsNullOrEmpty(CVData.Skills[i]))
+                {
+                    skills[i] = new Skill() { Name = CVData.Skills[i] };
+                }
+            }
+
+            CV updatedCv = new CV
+            {
+                Skills = skills,
+                Experiences = experiences,
+                Summary = CVData.Summary,
+                Educations = educations,
+            };
+
+            CreateCVResponse response = _session.CVEditAction(updatedCv, session.CV.Id);
+            if (response.IsSuccess)
+            {
+                return RedirectToAction("Index", "Profile");
+            }
+            else
+            {
+                ViewBag.ErrorMessage = response.Msg;
+                return View();
+            }
         }
     }
 }

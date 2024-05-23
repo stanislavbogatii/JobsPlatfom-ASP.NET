@@ -90,7 +90,8 @@ namespace Application.BusinessLogic.Core
             {
                 Email = curentUser.Email,
                 Name = curentUser.Name,
-                Role = curentUser.Role
+                Role = curentUser.Role,
+                CV = curentUser.CV
             };
 
             return user;

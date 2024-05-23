@@ -16,13 +16,18 @@ namespace Application.BusinessLogic
     public class SessionBL: ISession
     {
 
-        private CVApi cvApi;
-        private UserApi userApi;
+        private readonly CVApi cvApi;
+        private readonly UserApi userApi;
 
         public SessionBL()
         {
             this.cvApi = new CVApi();
             this.userApi = new UserApi();
+        }
+
+        public CreateCVResponse CVEditAction(CV data, int cvId)
+        {
+            return cvApi.EditCVService(data, cvId);
         }
 
         public CreateCVResponse CVCreateAction(CV data, string userEmail)

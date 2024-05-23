@@ -18,7 +18,11 @@ namespace Application.Controllers
             {
                 return RedirectToAction("Index", "Login");
             }
-            UserData userData = new UserData { Email = session.Email, Name = session.Name };
+            UserData userData = new UserData { 
+                Email = session.Email, 
+                Name = session.Name,
+                Cv = session.CV
+            };
 
             return View(userData);
         }
