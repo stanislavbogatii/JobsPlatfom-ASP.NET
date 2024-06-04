@@ -1,4 +1,5 @@
-﻿using Application.Domain.Entities.User;
+﻿using Application.Domain.Entities.Job;
+using Application.Domain.Entities.User;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -14,6 +15,7 @@ namespace Application.BusinessLogic.DBModel
             base("name=Solution")
         {
         }
+
         public virtual DbSet<Session> Sessions { get; set; }
     }
 }

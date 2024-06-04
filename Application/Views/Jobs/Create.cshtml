@@ -3,7 +3,7 @@
     ViewBag.Title = "Create";
 }
 
-@using (Html.BeginForm("Create", "CV", FormMethod.Post))
+@using (Html.BeginForm("Create", "Jobs", FormMethod.Post))
 {
     <form class="d-flex">
         <div style="width: 600px;
@@ -54,8 +54,7 @@
             <div class="form-group">
                 <label>Summary</label>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <textarea type="string" min="0" class="form-control skill-input" style="max-width: none" placeholder="Describe your job" name="summary">
-                    </textarea>
+                    <textarea type="string" min="0" class="form-control skill-input" style="max-width: none" placeholder="Describe your job" name="summary"></textarea>
                 </div>
             </div>
 

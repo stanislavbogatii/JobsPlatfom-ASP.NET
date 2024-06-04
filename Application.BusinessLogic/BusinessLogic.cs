@@ -13,5 +13,10 @@ namespace Application.BusinessLogic
         {
             return new SessionBL();
         }
+
+        public IJob GetJobBL()
+        {
+            return new JobBL();
+        }
     }
 }

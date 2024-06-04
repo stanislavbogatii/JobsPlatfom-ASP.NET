@@ -11,6 +11,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Web;
 
 namespace Application.BusinessLogic.Core
 {

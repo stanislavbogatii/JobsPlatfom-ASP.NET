@@ -15,13 +15,10 @@ namespace Application.Domain.Entities.CV
         public string Summary { get; set; }
 
 
-        // Навигационное свойство для навигации к сущности Skill
         public virtual ICollection<Skill> Skills { get; set; }
 
-        // Навигационное свойство для навигации к сущности Experience
         public virtual ICollection<Experience> Experiences { get; set; }
 
-        // Навигационное свойство для навигации к сущности Education
         public virtual ICollection<Education> Educations { get; set; }
     }
 

@@ -128,3 +128,6 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogi
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.CV_update.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.CV_updat.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.CV_updaasdf.resources
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.migration11.resources
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.workMode.resources
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.workModeToString.resources

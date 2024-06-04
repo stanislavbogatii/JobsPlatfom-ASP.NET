@@ -171,12 +171,17 @@
     <Compile Include="BusinessLogic.cs" />
     <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\CVApi.cs" />
+    <Compile Include="Core\JobApi.cs" />
     <Compile Include="Core\SessionApi.cs" />
     <Compile Include="Core\UserApi.cs" />
+    <Compile Include="DBModel\JobContext.cs" />
+    <Compile Include="DBModel\JobDbConfiguration.cs" />
     <Compile Include="DBModel\SessionContext.cs" />
     <Compile Include="DBModel\UserContext.cs" />
     <Compile Include="DBModel\UserDbConfiguration.cs" />
+    <Compile Include="Interfaces\IJob.cs" />
     <Compile Include="Interfaces\ISession.cs" />
+    <Compile Include="JobBL.cs" />
     <Compile Include="Migrations\202404241151594_InitialMigration.cs" />
     <Compile Include="Migrations\202404241151594_InitialMigration.designer.cs">
       <DependentUpon>202404241151594_InitialMigration.cs</DependentUpon>
@@ -204,6 +209,18 @@
     <Compile Include="Migrations\202405222151276_CV_updaasdf.cs" />
     <Compile Include="Migrations\202405222151276_CV_updaasdf.designer.cs">
       <DependentUpon>202405222151276_CV_updaasdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406042045592_migration11.cs" />
+    <Compile Include="Migrations\202406042045592_migration11.designer.cs">
+      <DependentUpon>202406042045592_migration11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406042058185_workMode.cs" />
+    <Compile Include="Migrations\202406042058185_workMode.designer.cs">
+      <DependentUpon>202406042058185_workMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406042111089_workModeToString.cs" />
+    <Compile Include="Migrations\202406042111089_workModeToString.designer.cs">
+      <DependentUpon>202406042111089_workModeToString.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -248,6 +265,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405222151276_CV_updaasdf.resx">
       <DependentUpon>202405222151276_CV_updaasdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406042045592_migration11.resx">
+      <DependentUpon>202406042045592_migration11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406042058185_workMode.resx">
+      <DependentUpon>202406042058185_workMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406042111089_workModeToString.resx">
+      <DependentUpon>202406042111089_workModeToString.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

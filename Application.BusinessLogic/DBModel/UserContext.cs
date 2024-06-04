@@ -9,8 +9,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using Application.BusinessLogic.DBModel;
-
-
+using Application.Domain.Entities.Job;
 
 namespace Application.BusinessLogic.DBModel
 {
@@ -27,8 +26,12 @@ namespace Application.BusinessLogic.DBModel
 
             modelBuilder.Configurations.Add(new UserDbConfiguration());
         }
+
         public virtual DbSet<UDbTable> Users { get; set; }
         public virtual DbSet<CVDbTable> CVs { get; set; }
+        public virtual DbSet<Session> Sessions { get; set; }
+        public virtual DbSet<JobDbTable> Jobs { get; set; }
+
 
     }
 }

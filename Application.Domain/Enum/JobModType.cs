@@ -10,6 +10,7 @@ namespace Application.Domain.Enum
     {
         partTime,
         fullTime,
-        remote
+        remote,
+        notSpecified
     }
 }

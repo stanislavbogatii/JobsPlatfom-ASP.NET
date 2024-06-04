@@ -7,9 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Application.Domain.Entities.User;
 
 namespace Application.Domain.Entities.Job
 {
+    [Table("Jobs")]
     public class JobDbTable
     {
         [Key]
@@ -17,11 +19,26 @@ namespace Application.Domain.Entities.Job
         public int Id { get; set; }
 
         [Required]
-        [Display(Name = "Name")]
-        public string Name { get; set; }
+        public string CompanyName { get; set; }
 
         [Required]
-        [Display(Name = "Mod")]
-        public JobModType Mod { get; set; }
+        public string Vacancy { get; set; }
+
+        [Required]
+        [Column("WorkMode")]
+        [EnumDataType(typeof(JobModType))]
+        public string WorkMode { get; set; }
+
+        public string Summary { get; set; }
+
+        public int MinExp { get; set; }
+
+        public int Salary { get; set; }
+
+        public int OwnerId { get; set; }
+
+        public virtual UDbTable Owner { get; set; }
+
+        public virtual ICollection<UDbTable> InterestedUsers { get; set; }
     }
 }
