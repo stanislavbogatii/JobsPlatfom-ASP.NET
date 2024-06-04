@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("Create", "CV", FormMethod.Post))
+{
+    <form class="d-flex">
+        <div style="width: 600px;
+         align-self: center;">
+
+            <h3 class="mb-5">Create your Job</h3>
+
+            <div class="form-group">
+                <label>Company name</label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" class="form-control skill-input" style="max-width: none" placeholder="Input your company name" name="companyName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Vacancy</label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" class="form-control skill-input" style="max-width: none" placeholder="Input vacancy name" name="vacancy">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Minimal experience</label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="number" min="0" class="form-control skill-input" style="max-width: none" placeholder="Input minimal experience (year)" name="minExp">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Salary</label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="number" min="0" class="form-control skill-input" style="max-width: none" placeholder="Input salary (EUR)" name="salary">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Work mode</label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <select class="form-control skill-input" style="max-width: none"  placeholder="Input salary (EUR)" name="workMode">
+                        <option value="fullTime">Full-time</option>
+                        <option value="partTime">Part-time</option>
+                        <option value="remote">Remote</option>
+                        <option value="notSpecified" selected>Not specified</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Summary</label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <textarea type="string" min="0" class="form-control skill-input" style="max-width: none" placeholder="Describe your job" name="summary">
+                    </textarea>
+                </div>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary w-100">Create</button>
+            <p class="text-danger">@ViewBag.ErrorMessage</p>
+        </div>
+    </form>
+}
+
+

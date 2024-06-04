@@ -44,6 +44,7 @@ namespace Application.BusinessLogic.Core
                     {
                         CV.Experiences.Add(experience);
                     }
+                    CV.Summary = data.Summary;
 
 
                     db.SaveChanges();
