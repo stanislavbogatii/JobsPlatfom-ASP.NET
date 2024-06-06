@@ -1,6 +1,7 @@
 ﻿using Application.BusinessLogic.Interfaces;
 using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
+using Application.Domain.Enum;
 using Application.Models.User;
 using System;
 using System.Collections.Generic;
@@ -28,13 +29,19 @@ namespace Application.Controllers
         [HttpPost]
         public ActionResult Index(UserRegister registerData)
         {
+            URole role;
+            if (registerData.IsEmployer)
+                role = URole.Employer;
+            else role = URole.Employee;
+
             URegisterData data = new URegisterData
             {
                 Email = registerData.Email,
                 Name = registerData.Name,
                 Password = registerData.Password,
                 LoginDateTime = DateTime.Now,
-                LoginIp = Request.UserHostAddress
+                LoginIp = Request.UserHostAddress,
+                role = role
             };
 
             URegisterResponse response = _session.UserRegistrationAction(data);

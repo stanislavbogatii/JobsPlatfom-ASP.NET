@@ -8,7 +8,7 @@ namespace Application.Domain.Enum
 {
     public enum URole
     {
-        User,
-        Admin
+        Employee,
+        Employer
     }
 }

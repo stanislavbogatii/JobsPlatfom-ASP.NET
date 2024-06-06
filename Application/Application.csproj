@@ -210,6 +210,7 @@
     <Compile Include="Models\cv\CreateCV.cs" />
     <Compile Include="Models\Job\CreateJob.cs" />
     <Compile Include="Models\Job\JobsListViewModel.cs" />
+    <Compile Include="Models\User\EditProfile.cs" />
     <Compile Include="Models\User\UserData.cs" />
     <Compile Include="Models\User\UserLogin.cs" />
     <Compile Include="Models\User\UserRegister.cs" />
@@ -347,6 +348,7 @@
     <Content Include="Views\CV\Create.cshtml" />
     <Content Include="Views\CV\Edit.cshtml" />
     <Content Include="Views\Jobs\Create.cshtml" />
+    <Content Include="Views\Profile\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -356,6 +358,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="UploadedFiles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application.BusinessLogic\Application.BusinessLogic.csproj">

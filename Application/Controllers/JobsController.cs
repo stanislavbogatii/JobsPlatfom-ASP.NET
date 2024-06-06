@@ -34,6 +34,10 @@ namespace Application.Controllers
         [HttpPost]
         public ActionResult Create(CreateJobModel JobData)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(JobData);
+            }
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
 

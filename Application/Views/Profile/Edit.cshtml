@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+@model Application.Models.User.UserData
+
+@using (Html.BeginForm("Edit", "Profile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <form>
+        <div>
+            <h3 style="">Edit profile info</h3>
+
+            <div style="display: flex; gap: 24px">
+
+                <div style="display: flex; flex-direction: column; font-size: 24px; gap: 10px">
+                    <div style="display: flex; flex-direction: column">
+                        <label style="padding: 0; margin: 0">User email</label>
+                        <input style="font-weight: 600;" value="@Model.Email" disabled/>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column">
+                        <label style="padding: 0; margin: 0">User name</label>
+                        <input style="font-weight: 600;" value="@Model.Name" name="Name" />
+                    </div>
+                    <div style="display: flex; flex-direction: column">
+                        <label style="padding: 0; margin: 0">Profile photo</label>
+                        <input style="font-weight: 600;" type="file" name="photo"/>
+                    </div>
+
+
+                    <div class="" style="display: flex; gap: 20px;height: 100%; width: 100%; margin-top: 20px; align-items: center">
+                        <button type="submit" class="btn btn-primary" style="margin-top: auto" onclick="location.href='@Url.Action("Create", "CV")'">Update profile info</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+}

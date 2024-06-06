@@ -1,5 +1,6 @@
 ﻿using Application.BusinessLogic.DBModel;
 using Application.Domain.Entities.CV;
+using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
 using Application.Domain.Enum;
@@ -52,7 +53,7 @@ namespace Application.BusinessLogic.Core
                 Password = data.Password,
                 LastIp = data.LoginIp,
                 LastLogin = DateTime.Now,
-                Role = URole.User
+                Role = data.role
             };
 
             using (var db = new UserContext())
@@ -62,6 +63,27 @@ namespace Application.BusinessLogic.Core
             }
 
             return new URegisterResponse { IsSuccess = true }; ;
+        }
+
+        public SimpleResponse RUpdateUser(UpdateUserModel data, string email)
+        {
+            UDbTable user;
+            using (var db = new UserContext())
+            {
+                user = db.Users.FirstOrDefault(u => u.Email == email);
+
+                if (user == null)
+                {
+                    return new SimpleResponse { IsSuccess = false, Msg = "Usser not found" };
+                }
+
+                user.Name = data.Name;
+                user.PhotoPath = data.photoPath;
+
+                db.SaveChanges();
+
+            }
+            return new SimpleResponse { IsSuccess = true }; ;
         }
 
         public User RGetUserByCookie(string cookie)
@@ -83,6 +105,7 @@ namespace Application.BusinessLogic.Core
                     .Include(u => u.CV.Skills)
                     .Include(u => u.CV.Experiences)
                     .FirstOrDefault(u => u.Email == session.Email);
+                
             }
             if (curentUser == null) return null;
 
@@ -91,7 +114,8 @@ namespace Application.BusinessLogic.Core
                 Email = curentUser.Email,
                 Name = curentUser.Name,
                 Role = curentUser.Role,
-                CV = curentUser.CV
+                CV = curentUser.CV,
+                PhotoPath = curentUser.PhotoPath
             };
 
             return user;

@@ -1,4 +1,5 @@
 ﻿using Application.Domain.Entities.CV;
+using Application.Domain.Entities.Job;
 using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
@@ -42,7 +43,10 @@ namespace Application.Domain.Entities.User
         [ForeignKey("CV")]
         public int? CvId { get; set; }
 
+        public string PhotoPath { get; set; }
         public virtual CVDbTable CV { get; set; }
+
+        public virtual ICollection<JobApplicationsDbTable> applications { get; set; }
 
     }
 }

@@ -7,20 +7,32 @@
 
 <div>
     <div>
-        <h3 style="">Profile info</h3>
-        <div style="display: flex; gap: 24px">
-            <div style="width: 200px; height: 200px; background-color: gray; border-radius: 25px"></div>
-            <div style="display: flex; flex-direction: column; font-size: 24px">
-                <p style="font-weight: bold;">Username: @Html.DisplayFor(u => u.Name)</p>
-                <p style="font-weight: 600">Email: @Html.DisplayFor(u => u.Email)</p>
-            </div>
-            @if (Model.Cv == null)
-            {
-                <div class="ml-auto">
-                    <button type="submit" class="btn btn-primary w-100" onclick="location.href='@Url.Action("Create", "CV")'">Create CV</button>
-                </div>
-            }
-        </div>
+         <h3 style="">Profile info</h3>
+
+         <div style="display: flex; gap: 24px">
+             @if (!string.IsNullOrEmpty(Model.photoPath))
+             {
+                 <img src="@Url.Content(Model.photoPath)" alt="Profile Photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px" />
+             }
+             else
+             {
+                 <div style="width: 200px; height: 200px; background-color: gray; border-radius: 5px"></div>
+
+             }
+             <div style="display: flex; flex-direction: column; font-size: 24px">
+                 <p style="font-weight: bold;">Username: @Html.DisplayFor(u => u.Name)</p>
+                 <p style="font-weight: 600">Email: @Html.DisplayFor(u => u.Email)</p>
+                 <div class="" style="display: flex; gap: 20px;height: 100%; width: 300px; align-items: center">
+                     <button type="submit" class="btn btn-primary" style="margin-top: auto" onclick="location.href='@Url.Action("Edit", "Profile")'">Update profile info</button>
+                 </div>
+             </div>
+             @if (Model.Cv == null)
+             {
+                 <div class="ml-auto">
+                     <button type="submit" class="btn btn-primary w-100" onclick="location.href='@Url.Action("Create", "CV")'">Create CV</button>
+                 </div>
+             }
+         </div>
         @if (Model.Cv != null)
         {
             <h3 style="margin-top: 26px">My CV</h3>

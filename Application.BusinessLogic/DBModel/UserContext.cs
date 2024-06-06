@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Application.BusinessLogic.DBModel;
 using Application.Domain.Entities.Job;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Application.BusinessLogic.DBModel
 {
@@ -31,6 +32,7 @@ namespace Application.BusinessLogic.DBModel
         public virtual DbSet<CVDbTable> CVs { get; set; }
         public virtual DbSet<Session> Sessions { get; set; }
         public virtual DbSet<JobDbTable> Jobs { get; set; }
+        public virtual DbSet<JobApplicationsDbTable> JobApplications { get; set; }
 
 
     }

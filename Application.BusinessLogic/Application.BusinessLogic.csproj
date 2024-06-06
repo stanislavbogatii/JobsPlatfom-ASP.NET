@@ -222,6 +222,14 @@
     <Compile Include="Migrations\202406042111089_workModeToString.designer.cs">
       <DependentUpon>202406042111089_workModeToString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202406062015553_photo path for user.cs" />
+    <Compile Include="Migrations\202406062015553_photo path for user.designer.cs">
+      <DependentUpon>202406062015553_photo path for user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406062113376_new.cs" />
+    <Compile Include="Migrations\202406062113376_new.designer.cs">
+      <DependentUpon>202406062113376_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
@@ -274,6 +282,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406042111089_workModeToString.resx">
       <DependentUpon>202406042111089_workModeToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406062015553_photo path for user.resx">
+      <DependentUpon>202406062015553_photo path for user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406062113376_new.resx">
+      <DependentUpon>202406062113376_new.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,6 +5,7 @@ using Application.Domain.Entities.User;
 using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
@@ -65,6 +66,11 @@ namespace Application.BusinessLogic.Core
             return convertedJobs;
         }
 
+        public SimpleResponse ApplyToJob(int jobId, string email)
+        {
+            return new SimpleResponse { IsSuccess = true };
+        }
+
         public List<Job> GetUserJobsService(string email)
         {
             List<JobDbTable> jobs;
@@ -83,6 +89,7 @@ namespace Application.BusinessLogic.Core
             {
                 return new Job
                 {
+                    Id = job.Id,
                     CompanyName = job.CompanyName,
                     MinExp = job.MinExp,
                     Salary = job.Salary,

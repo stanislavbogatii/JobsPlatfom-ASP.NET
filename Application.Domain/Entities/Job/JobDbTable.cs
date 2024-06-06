@@ -40,5 +40,6 @@ namespace Application.Domain.Entities.Job
         public virtual UDbTable Owner { get; set; }
 
         public virtual ICollection<UDbTable> InterestedUsers { get; set; }
+        public virtual ICollection<JobApplicationsDbTable> applications { get; set; }
     }
 }

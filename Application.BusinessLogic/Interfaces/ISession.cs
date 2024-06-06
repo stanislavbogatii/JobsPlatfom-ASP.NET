@@ -17,6 +17,7 @@ namespace Application.BusinessLogic.Interfaces
         HttpCookie GenCookie(string Email);
         User GetUserByCookie(string CookieValue);
         CreateCVResponse CVCreateAction(CV data, string userEmail);
+        SimpleResponse EditUserAction(UpdateUserModel data, string email);
         CreateCVResponse CVEditAction(CV data, int cvId);
     }
 }

@@ -24,6 +24,10 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                 </div>
+                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" style="" name="IsEmployer" value="true" />
+                    <label for="exampleInputPassword1" style="margin: 0;">Are you employer?</label>
+                </div>
 
                 <a href="@Url.Action("Index", "Login")">Login</a>
                 <button type="submit" class="btn btn-primary w-100">Submit</button>

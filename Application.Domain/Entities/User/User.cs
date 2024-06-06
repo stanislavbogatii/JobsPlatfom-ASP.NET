@@ -17,5 +17,6 @@ namespace Application.Domain.Entities.User
         public string LoginIp { get; set; }
         public URole Role { get; set; }
         public CVDbTable CV { get; set; }
+        public string PhotoPath { get; set; }
     }
 }

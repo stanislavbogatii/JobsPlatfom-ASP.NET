@@ -10,6 +10,7 @@ namespace Application.Domain.Entities.Job
 {
     public class Job
     {
+        public int Id { get; set; }
         public string CompanyName { get; set; }
 
         public string Vacancy { get; set; }

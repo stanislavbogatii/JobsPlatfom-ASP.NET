@@ -30,6 +30,11 @@ namespace Application.BusinessLogic
             return cvApi.EditCVService(data, cvId);
         }
 
+        public SimpleResponse EditUserAction(UpdateUserModel data, string email)
+        {
+            return userApi.RUpdateUser(data, email);
+        }
+
         public CreateCVResponse CVCreateAction(CV data, string userEmail)
         {
             return cvApi.CreateCVService(data, userEmail);

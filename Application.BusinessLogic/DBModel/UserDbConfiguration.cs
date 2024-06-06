@@ -1,4 +1,5 @@
 ﻿using Application.Domain.Entities.CV;
+using Application.Domain.Entities.Job;
 using Application.Domain.Entities.User;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace Application.BusinessLogic.DBModel
 {
     public class UserDbConfiguration : EntityTypeConfiguration<UDbTable>
     {
+
 
     public UserDbConfiguration()
         {
