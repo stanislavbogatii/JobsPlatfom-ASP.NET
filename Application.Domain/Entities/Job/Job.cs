@@ -23,5 +23,6 @@ namespace Application.Domain.Entities.Job
         public int MinExp { get; set; }
 
         public int Salary { get; set; }
+        public int? ApplicationCount { get; set; }
     }
 }

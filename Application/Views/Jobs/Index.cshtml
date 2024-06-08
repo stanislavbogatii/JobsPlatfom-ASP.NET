@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
@@ -39,19 +38,21 @@
                             <h3 style="font-size: 20px; font-weight: 700">@job.Vacancy</h3>
                             <h4 style="font-size: 16px">@job.CompanyName</h4>
                         </div>
-                        @using (Html.BeginForm("Apply", "Jobs", new { id = job.Id }, FormMethod.Post))
-                        {
-                            <button type="submit" class="btn btn-outline-info w-100">Apply</button>
-                        }
+                        <div>
+                            <button type="button" class="btn btn-outline-info w-100" onclick="showConfirmPopup(@job.Id)">Apply</button>
+                        </div>
                     </div>
                     <div style="width: 100%; height: 1px; background-color: gray;" class="my-3"></div>
                     <div class="d-flex gap-5"
-                         style="color: gray">
+                         style="color: gray; width: 100%;">
                         <div>
-                            <p style="font-weight: 500">Expirience: <span style="font-weight: 400">@job.MinExp years</span></p>
+                            <p style="font-weight: 500">Experience: <span style="font-weight: 400">@job.MinExp years</span></p>
                         </div>
                         <div>
                             <p style="font-weight: 500">Work mode: <span style="font-weight: 400">@job.WorkMode</span></p>
+                        </div>
+                        <div style="margin-left: auto;">
+                            <p style="font-weight: 500">Applications to this job: <span style="font-weight: 400">@job.ApplicationCount</span></p>
                         </div>
                     </div>
                 </div>
@@ -60,9 +61,34 @@
     </ul>
 </div>
 
-<style>
-    .cursor-pointer:hover {
-        cursor: pointer;
-    }
-</style>
 
+<div class="modal fade" id="confirmApplyModal" tabindex="-1" role="dialog" aria-labelledby="confirmApplyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmApplyModalLabel">Confirm Apply</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to apply for this job?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                @using (Html.BeginForm("Apply", "Jobs", FormMethod.Post, new { id = "applyForm" }))
+                {
+                    @Html.Hidden("id", "", new { id = "jobId" })
+                    <button type="submit" class="btn btn-primary">Yes, Apply</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showConfirmPopup(jobId) {
+        $('#jobId').val(jobId);
+        $('#confirmApplyModal').modal('show');
+    }
+</script>

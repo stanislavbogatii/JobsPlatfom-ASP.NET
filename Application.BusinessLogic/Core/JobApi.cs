@@ -6,6 +6,7 @@ using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 
 namespace Application.BusinessLogic.Core
 {
@@ -41,10 +42,11 @@ namespace Application.BusinessLogic.Core
 
         public List<Job> GetJobsService()
         {
+
             List<JobDbTable> jobs;
             using (var db = new UserContext())
             {
-                jobs = db.Jobs.ToList();
+                jobs = db.Jobs.Include(j => j.applications).ToList();
             }
             List<Job> convertedJobs = jobs.Select(job =>
             {
@@ -54,9 +56,10 @@ namespace Application.BusinessLogic.Core
                     CompanyName = job.CompanyName,
                     MinExp = job.MinExp,
                     Salary = job.Salary,
-                    Summary = job.Summary,
+                    Summary = job.Summary,  
                     Vacancy = job.Vacancy,
-                    WorkMode = (JobModType)Enum.Parse(typeof(JobModType), job.WorkMode)
+                    WorkMode = (JobModType)Enum.Parse(typeof(JobModType), job.WorkMode),
+                    ApplicationCount = job.applications.Count
                 };
             }).ToList();
             return convertedJobs;

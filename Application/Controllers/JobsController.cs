@@ -1,14 +1,9 @@
 ﻿using Application.BusinessLogic.Interfaces;
-using Application.Domain.Entities.CV;
 using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Extensions;
-using Application.Models.cv;
 using Application.Models.Job;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Application.Controllers
