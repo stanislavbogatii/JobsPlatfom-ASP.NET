@@ -12,6 +12,7 @@ namespace Application.Domain.Entities.Job
     public class JobApplicationsDbTable
     {
         public int Id { get; set; }
+        public string message { get; set; }
 
     }
 }

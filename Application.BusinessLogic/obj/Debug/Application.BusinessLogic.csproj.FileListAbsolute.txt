@@ -133,3 +133,4 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogi
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.workModeToString.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.photopathforuser.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations._new.resources
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.MsgtoApplication.resources

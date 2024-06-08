@@ -32,6 +32,21 @@ namespace Application.Controllers
         }
 
         [HttpPost]
+        public ActionResult Apply(int id)
+        {
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+            SimpleResponse response = _job.ApplyToJobAction(id, session.Email);
+
+            if (response.IsSuccess == true)
+                TempData["SuccessMessage"] = response.Msg;
+            else
+                TempData["ErrorMessage"] = response.Msg;
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
         public ActionResult Create(CreateJobModel JobData)
         {
             if (!ModelState.IsValid)

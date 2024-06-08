@@ -5,12 +5,7 @@ using Application.Domain.Entities.User;
 using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 
 namespace Application.BusinessLogic.Core
 {
@@ -55,6 +50,7 @@ namespace Application.BusinessLogic.Core
             {
                 return new Job
                 {
+                    Id = job.Id,
                     CompanyName = job.CompanyName,
                     MinExp = job.MinExp,
                     Salary = job.Salary,
@@ -66,10 +62,23 @@ namespace Application.BusinessLogic.Core
             return convertedJobs;
         }
 
-        public SimpleResponse ApplyToJob(int jobId, string email)
+        public SimpleResponse ApplyToJobService(int jobId, string email)
         {
-            return new SimpleResponse { IsSuccess = true };
+            using (var db = new UserContext())
+            {
+                UDbTable user = db.Users.FirstOrDefault(u => u.Email == email);
+                JobDbTable job = db.Jobs.FirstOrDefault(j => j.Id == jobId);
+                if (user == null) return new SimpleResponse { IsSuccess = false, Msg = "User not found" };
+                if (job == null) return new SimpleResponse { IsSuccess = false, Msg = "Job not found" };
+                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Hello!" };
+                user.applications.Add(newAplication);
+                job.applications.Add(newAplication);
+                db.SaveChanges();
+            }
+            return new SimpleResponse { IsSuccess = true, Msg = "Success!" };
         }
+
+
 
         public List<Job> GetUserJobsService(string email)
         {

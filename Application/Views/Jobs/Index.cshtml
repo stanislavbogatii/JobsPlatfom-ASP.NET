@@ -13,6 +13,20 @@
         </div>
     </header>
 
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
     <ul class="m-0 p-0"
         style="list-style: none; display: flex; flex-direction: column; gap: 10px">
         @foreach (var job in Model.jobs)
@@ -25,9 +39,10 @@
                             <h3 style="font-size: 20px; font-weight: 700">@job.Vacancy</h3>
                             <h4 style="font-size: 16px">@job.CompanyName</h4>
                         </div>
-                        <div>
+                        @using (Html.BeginForm("Apply", "Jobs", new { id = job.Id }, FormMethod.Post))
+                        {
                             <button type="submit" class="btn btn-outline-info w-100">Apply</button>
-                        </div>
+                        }
                     </div>
                     <div style="width: 100%; height: 1px; background-color: gray;" class="my-3"></div>
                     <div class="d-flex gap-5"

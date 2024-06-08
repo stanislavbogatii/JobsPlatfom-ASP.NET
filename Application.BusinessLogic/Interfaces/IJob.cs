@@ -16,5 +16,6 @@ namespace Application.BusinessLogic.Interfaces
         CreateJobResponse CreateJobAction(Job data, string ownerEmail);
         List<Job> GetJobs();
         List<Job> GetUserJobs(string email);
+        SimpleResponse ApplyToJobAction(int jobId, string email);
     }
 }
