@@ -2,6 +2,7 @@
 using Application.BusinessLogic.DBModel;
 using Application.BusinessLogic.Interfaces;
 using Application.Domain.Entities.CV;
+using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
 using System;
@@ -23,6 +24,20 @@ namespace Application.BusinessLogic
         {
             this.cvApi = new CVApi();
             this.userApi = new UserApi();
+        }
+
+        public SimpleResponse UpdateUserPasswordAction(int id, string newPassword, string prevPassword)
+        {
+            return userApi.UpdateUserPasswordService(id, newPassword, prevPassword);
+        }
+
+        public List<InterviewDbTable> GetEmployeeInterviewService(int id)
+        {
+            return userApi.GetEmployeeInterviewService(id);
+        }
+        public List<JobFeedbackDbTable> GetEmployeeFeedbackService(int id)
+        {
+            return userApi.GetEmployeeFeedbackService(id);
         }
 
         public CreateCVResponse CVEditAction(CV data, int cvId)

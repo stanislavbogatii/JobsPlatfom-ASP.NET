@@ -2,6 +2,7 @@
 using Application.Domain.Entities.CV;
 using Application.Domain.Entities.Response;
 using Application.Extensions;
+using Application.Models;
 using Application.Models.cv;
 using Application.Models.User;
 using Microsoft.Ajax.Utilities;
@@ -28,12 +29,30 @@ namespace Application.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+            ProfileViewModels viewData = new ProfileViewModels
+            {
+                user = new UserData
+                {
+                    Role = session.Role
+                }
+            };
+            return View(viewData);
         }
         
         public ActionResult Create()
         {
-            return View();
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+            ProfileViewModels viewData = new ProfileViewModels
+            {
+                user = new UserData
+                {
+                    Role = session.Role
+                }
+            };
+            return View(viewData);
         }
 
         public ActionResult Edit()
@@ -46,9 +65,15 @@ namespace Application.Controllers
             }
             UserData userData = new UserData
             {
-                Cv = session.CV
+                Cv = session.CV,
+                Role = session.Role
             };
-            return View(userData);
+            ProfileViewModels viewModel = new ProfileViewModels
+            {
+                user = userData
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]

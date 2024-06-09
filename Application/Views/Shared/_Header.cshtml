@@ -1,27 +1,38 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "_Header";
+    var model = Model;
 }
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow justify-content-center">
     <div style="width: 80%; display: flex">
-        <a class="navbar-brand" style="font-weight: 700" href="#">Jobs Platform</a>
+        <a class="navbar-brand" style="font-weight: 700" href="@Url.Action("Index", "Home")">Jobs Platform</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("Index", "Jobs")">Jobs <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("MyJobs", "Jobs")">My jobs <span class="sr-only">(current)</span></a>
-                </li>
+                @if (model.user.Role == "Employee")
+                {
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Index", "Jobs")">Jobs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Interviews", "Profile")">Interviews <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Feedback", "Profile")">Feedback <span class="sr-only">(current)</span></a>
+                    </li>
+                }
+                @if (model.user.Role == "Employer")
+                {
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("MyJobs", "Jobs")">My jobs <span class="sr-only">(current)</span></a>
+                    </li>
+                }
                 <li class="nav-item active">
                     <a class="nav-link" href="@Url.Action("Index", "Profile")">Profile</a>
                 </li>
-
             </ul>
             @using (Html.BeginForm("LogOut", "Base", FormMethod.Post))
             {

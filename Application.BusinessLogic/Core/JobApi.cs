@@ -3,11 +3,9 @@ using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
 using Application.Domain.Enum;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
-using Microsoft.EntityFrameworkCore.Internal;
 
 namespace Application.BusinessLogic.Core
 {
@@ -39,10 +37,10 @@ namespace Application.BusinessLogic.Core
                 db.Jobs.Add(newJob);
                 db.SaveChanges();
             }
-            return new CreateJobResponse { IsSuccess = true, Msg = "success" };
+            return new CreateJobResponse { IsSuccess = true, Msg = "Success create job" };
         }
 
-        public SimpleResponse SendFeedbackService(int userId, int jobId, string message)
+        public SimpleResponse SendFeedbackService(int userId, int jobId)
         {
             using (var db = new UserContext())
             {
@@ -51,7 +49,7 @@ namespace Application.BusinessLogic.Core
 
                 JobFeedbackDbTable newFeedback = new JobFeedbackDbTable
                 {
-                    message = message,
+                    message = job.CompanyName + " accept your application to vacancy: " + job.Vacancy,
                     jobId = job.Id,
                     userId = userId
                 };
@@ -65,7 +63,7 @@ namespace Application.BusinessLogic.Core
         }
 
 
-        public SimpleResponse SchelduleInterviewService(int userId, int jobId, string date, string time, string location, string message)
+        public SimpleResponse SchelduleInterviewService(int userId, int jobId, string date, string time, string location)
         {
             using (var db = new UserContext())
             {
@@ -74,7 +72,7 @@ namespace Application.BusinessLogic.Core
 
                 InterviewDbTable newInterview = new InterviewDbTable
                 {
-                    message = message,
+                    message = job.CompanyName + "  invites you for an interview for a vacancy: " + job.Vacancy,
                     jobId = job.Id,
                     userId = userId,
                     date = date,
@@ -167,6 +165,7 @@ namespace Application.BusinessLogic.Core
             }
             return job;
         }
+
 
         public SimpleResponse ApplyToJobService(int jobId, int userId, string message)
         {

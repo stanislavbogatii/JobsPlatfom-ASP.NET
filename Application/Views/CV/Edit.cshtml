@@ -2,9 +2,22 @@
 @{
     ViewBag.Title = "Create";
 }
-@model Application.Models.User.UserData
+@model Application.Models.ProfileViewModels
 @using (Html.BeginForm("Edit", "CV", FormMethod.Post))
 {
+    if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
     <form class="d-flex">
         <div style="width: 600px;
          align-self: center;">
@@ -13,21 +26,21 @@
 
             <div class="form-group skill-group">
                 <label>Skill</label>
-                
-                    <div id="skillsContianer" style="display: flex; flex-direction: column; gap: 10px;">
-                        @foreach (var item in Model.Cv.Skills)
-                        {
-                            <input type="text" class="form-control skill-input" style="max-width: none" value="@item.Name" placeholder="Skill name" name="skills[]">
-                        }
-                        <input type="text" class="form-control skill-input" style="max-width: none" placeholder="Skill name" name="skills[]">
-                    </div>
+
+                <div id="skillsContianer" style="display: flex; flex-direction: column; gap: 10px;">
+                    @foreach (var item in Model.user.Cv.Skills)
+                    {
+                        <input type="text" class="form-control skill-input" style="max-width: none" value="@item.Name" placeholder="Skill name" name="skills[]">
+                    }
+                    <input type="text" class="form-control skill-input" style="max-width: none" placeholder="Skill name" name="skills[]">
+                </div>
                 <button type="button" class="btn btn-primary add-skill-btn w-100 mt-3">Add New Skill</button>
             </div>
 
             <div class="form-group experience-group">
                 <label>Experience</label>
                 <div id="experiencesContainer" style="display: flex; flex-direction: column; gap: 10px">
-                    @foreach (var item in Model.Cv.Experiences)
+                    @foreach (var item in Model.user.Cv.Experiences)
                     {
                         <div class="d-flex gap-2">
                             <input type="text" class="form-control experience-name" style="max-width: none" placeholder="Experience name" value="@item.Name" name="experienceNames[]">
@@ -45,7 +58,7 @@
             <div class="form-group education-group">
                 <label>Educations</label>
                 <div id="educationContainer" style="display: flex; flex-direction: column; gap: 10px">
-                    @foreach (var item in Model.Cv.Educations)
+                    @foreach (var item in Model.user.Cv.Educations)
                     {
                         <div class="d-flex gap-2">
                             <input type="text" class="form-control education-name" style="max-width: none" placeholder="Education name" value="@item.Name" name="educationNames[]">
@@ -62,7 +75,7 @@
 
             <div class="form-group">
                 <label>Summary</label>
-                <textarea type="text" class="form-control summary-input" style="max-width: none; height: 150px" placeholder="Summary" name="summary">@Model.Cv.Summary</textarea>
+                <textarea type="text" class="form-control summary-input" style="max-width: none; height: 150px" placeholder="Summary" name="summary">@Model.user.Cv.Summary</textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Edit</button>
             <p class="text-danger">@ViewBag.ErrorMessage</p>

@@ -24,14 +24,14 @@ namespace Application.BusinessLogic
             return jobApi.GetJobByIdService(Id);
         }
 
-        public SimpleResponse SendFeedbackAction(int userId, int jobId, string message)
+        public SimpleResponse SendFeedbackAction(int userId, int jobId)
         {
-            return jobApi.SendFeedbackService(userId, jobId, message);
+            return jobApi.SendFeedbackService(userId, jobId);
         }
 
-        public SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location, string message)
+        public SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location)
         {
-            return jobApi.SchelduleInterviewService(userId, jobId, date, time, location, message);
+            return jobApi.SchelduleInterviewService(userId, jobId, date, time, location);
         }
 
         public List<JobApplication> GetJobApplicationAction(int jobId)

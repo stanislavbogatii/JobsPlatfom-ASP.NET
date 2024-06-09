@@ -56,9 +56,12 @@
                             <h3 style="font-size: 20px; font-weight: 700">@job.Vacancy</h3>
                             <h4 style="font-size: 16px">@job.CompanyName</h4>
                         </div>
+                        @if (Model.user.Role == "Employee")
+                        {
                         <div>
                             <button type="button" class="btn btn-outline-info w-100" onclick="showConfirmPopup(@job.Id)">Apply</button>
                         </div>
+                        }
                     </div>
                     <div style="width: 100%; height: 1px; background-color: gray;" class="my-3"></div>
                     <div class="d-flex gap-5"
@@ -104,8 +107,6 @@
                         <button type="submit" class="btn btn-primary" style="margin-top: 10px">Yes, Apply</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
-                    
-
                 }
             </div>
         </div>

@@ -3,38 +3,81 @@
     ViewBag.Title = "Edit";
 }
 
-@model Application.Models.User.UserData
+@model Application.Models.ProfileViewModels
 
-@using (Html.BeginForm("Edit", "Profile", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    <form>
-        <div>
-            <h3 style="">Edit profile info</h3>
+<div style="display: flex; gap: 200px">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
 
-            <div style="display: flex; gap: 24px">
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
 
-                <div style="display: flex; flex-direction: column; font-size: 24px; gap: 10px">
-                    <div style="display: flex; flex-direction: column">
-                        <label style="padding: 0; margin: 0">User email</label>
-                        <input style="font-weight: 600;" value="@Model.Email" disabled/>
+    @using (Html.BeginForm("Edit", "Profile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <form>
+            <div>
+                <h3 style="">Edit profile info</h3>
+
+                <div style="display: flex; gap: 24px">
+
+                    <div style="display: flex; flex-direction: column; font-size: 24px; gap: 10px">
+                        <div style="display: flex; flex-direction: column">
+                            <label style="padding: 0; margin: 0">User email</label>
+                            <input style="font-weight: 600;" value="@Model.user.Email" disabled />
+                        </div>
+
+                        <div style="display: flex; flex-direction: column">
+                            <label style="padding: 0; margin: 0">User name</label>
+                            <input style="font-weight: 600;" value="@Model.user.Name" name="Name" />
+                        </div>
+                        <div style="display: flex; flex-direction: column">
+                            <label style="padding: 0; margin: 0">Profile photo</label>
+                            <input style="font-weight: 600;" type="file" name="photo" />
+                        </div>
+
+
+                        <div class="" style="display: flex; gap: 20px;height: 100%; width: 100%; margin-top: 20px; align-items: center">
+                            <button type="submit" class="btn btn-primary" style="margin-top: auto">Update profile info</button>
+                        </div>
                     </div>
 
-                    <div style="display: flex; flex-direction: column">
-                        <label style="padding: 0; margin: 0">User name</label>
-                        <input style="font-weight: 600;" value="@Model.Name" name="Name" />
-                    </div>
-                    <div style="display: flex; flex-direction: column">
-                        <label style="padding: 0; margin: 0">Profile photo</label>
-                        <input style="font-weight: 600;" type="file" name="photo"/>
-                    </div>
+                </div>
+            </div>
+        </form>
+    }
+    @using (Html.BeginForm("UpdatePassword", "Profile", FormMethod.Post))
+    {
+        <form>
+            <div>
+                <h3 style="">Update password</h3>
 
+                <div style="display: flex; gap: 24px">
 
-                    <div class="" style="display: flex; gap: 20px;height: 100%; width: 100%; margin-top: 20px; align-items: center">
-                        <button type="submit" class="btn btn-primary" style="margin-top: auto" onclick="location.href='@Url.Action("Create", "CV")'">Update profile info</button>
+                    <div style="display: flex; flex-direction: column; font-size: 24px; gap: 10px">
+                        <div style="display: flex; flex-direction: column">
+                            <label style="padding: 0; margin: 0">New password</label>
+                            <input style="font-weight: 600;" type="password" name="newPassword" />
+                        </div>
+
+                        <div style="display: flex; flex-direction: column">
+                            <label style="padding: 0; margin: 0">Prev password</label>
+                            <input style="font-weight: 600;" type="password" name="prevPassword" />
+                        </div>
                     </div>
                 </div>
-
+                <div class="" style="display: flex; gap: 20px;height: 100%; width: 100%; margin-top: 20px; align-items: center">
+                    <button type="submit" class="btn btn-primary" style="margin-top: auto">Update password</button>
+                </div>
             </div>
-        </div>
-    </form>
-}
+        </form>
+    }
+</div>
+

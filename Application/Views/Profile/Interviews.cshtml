@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Interviews";
+}
+
+@model Application.Models.ProfileInterviewsView
+
+<h2>Interviews</h2>
+<ul class="m-0 p-0"
+    style="list-style: none; display: flex; flex-direction: column; gap: 5px">
+    @foreach (var interview in Model.interviews)
+    {
+        <li style=""
+            class="rounded-2 p-4 border border-black hover-pointer cursor-pointer">
+            <p>Message: @interview.message</p>
+            <p>Location: @interview.location</p>
+            <p>Date: @interview.date @interview.time</p>
+        </li>
+    }
+</ul>
+

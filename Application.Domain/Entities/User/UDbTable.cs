@@ -38,7 +38,7 @@ namespace Application.Domain.Entities.User
         [StringLength(30)]
         public string LastIp { get; set; }
 
-        public URole Role { get; set; }
+        public string Role { get; set; }
 
         [ForeignKey("CV")]
         public int? CvId { get; set; }

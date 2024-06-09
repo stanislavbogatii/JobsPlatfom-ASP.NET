@@ -1,4 +1,5 @@
 ﻿using Application.Domain.Entities.CV;
+using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Domain.Entities.User;
 using System;
@@ -19,6 +20,9 @@ namespace Application.BusinessLogic.Interfaces
         CVDbTable GetCVByUserIdService(int userId);
         CreateCVResponse CVCreateAction(CV data, string userEmail);
         SimpleResponse EditUserAction(UpdateUserModel data, string email);
+        List<InterviewDbTable> GetEmployeeInterviewService(int id);
+        List<JobFeedbackDbTable> GetEmployeeFeedbackService(int id);
+        SimpleResponse UpdateUserPasswordAction(int id, string newPassword, string prevPassword);
         CreateCVResponse CVEditAction(CV data, int cvId);
     }
 }

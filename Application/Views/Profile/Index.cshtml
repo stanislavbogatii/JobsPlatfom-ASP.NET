@@ -3,74 +3,92 @@
     ViewBag.Title = "Index";
 }
 
-@model Application.Models.User.UserData
+@model Application.Models.ProfileViewModels
 
 <div>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
     <div>
-         <h3 style="">Profile info</h3>
+        <h3 style="">Profile info</h3>
+        <div style="display: flex; gap: 24px">
+            @if (!string.IsNullOrEmpty(Model.user.photoPath))
+            {
+                <img src="@Url.Content(Model.user.photoPath)" alt="Profile Photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px" />
+            }
+            else
+            {
+                <div style="width: 200px; height: 200px; background-color: gray; border-radius: 5px"></div>
 
-         <div style="display: flex; gap: 24px">
-             @if (!string.IsNullOrEmpty(Model.photoPath))
-             {
-                 <img src="@Url.Content(Model.photoPath)" alt="Profile Photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px" />
-             }
-             else
-             {
-                 <div style="width: 200px; height: 200px; background-color: gray; border-radius: 5px"></div>
-
-             }
-             <div style="display: flex; flex-direction: column; font-size: 24px">
-                 <p style="font-weight: bold;">Username: @Html.DisplayFor(u => u.Name)</p>
-                 <p style="font-weight: 600">Email: @Html.DisplayFor(u => u.Email)</p>
-                 <div class="" style="display: flex; gap: 20px;height: 100%; width: 300px; align-items: center">
-                     <button type="submit" class="btn btn-primary" style="margin-top: auto" onclick="location.href='@Url.Action("Edit", "Profile")'">Update profile info</button>
-                 </div>
-             </div>
-             @if (Model.Cv == null)
-             {
-                 <div class="ml-auto">
-                     <button type="submit" class="btn btn-primary w-100" onclick="location.href='@Url.Action("Create", "CV")'">Create CV</button>
-                 </div>
-             }
-         </div>
-        @if (Model.Cv != null)
-        {
-            <h3 style="margin-top: 26px">My CV</h3>
-            <div style="border: 1px solid black; padding: 10px; font-size: 18px; font-weight: 500; border-radius: 6px; position: relative">
-                <div class="position-absolute" style="top: 10px; right: 10px">
-                    <button type="submit" class="btn btn-primary w-100 px-5" onclick="location.href='@Url.Action("Edit", "CV")'">Edit</button>
-                </div>
-                <div>
-                    <p>Skills:</p>
-                    <ul>
-                        @foreach (var item in Model.Cv.Skills)
-                        {
-                            <li>@item.Name</li>
-                        }
-                    </ul>
-                </div>
-                <div>
-                    <p>Educations:</p>
-                    <ul>
-                        @foreach (var item in Model.Cv.Educations)
-                        {
-                            <li>@item.Name   -   @item.Duration year</li>
-                        }
-                    </ul>
-                </div>
-                <div>
-                    <p>Experiences:</p>
-                    <ul>
-                        @foreach (var item in Model.Cv.Experiences)
-                        {
-                            <li>@item.Name - @item.Duration year</li>
-                        }
-                    </ul>
-                </div>
-                <div>
-                    <p>Summary: <span style="font-weight: 400">@Model.Cv.Summary</span></p>
+            }
+            <div style="display: flex; flex-direction: column; font-size: 24px">
+                <p style="font-weight: bold;">Username: @Html.DisplayFor(u => u.user.Name)</p>
+                <p style="font-weight: 600">Email: @Html.DisplayFor(u => u.user.Email)</p>
+                <div class="" style="display: flex; gap: 20px;height: 100%; width: 300px; align-items: center">
+                    <button type="submit" class="btn btn-primary" style="margin-top: auto" onclick="location.href='@Url.Action("Edit", "Profile")'">Update profile info</button>
                 </div>
             </div>
+            @if (Model.user.Role == "Employee")
+            {
+                if (Model.user.Cv == null)
+                {
+                    <div class="ml-auto">
+                        <button type="submit" class="btn btn-primary w-100" onclick="location.href='@Url.Action("Create", "CV")'">Create CV</button>
+                    </div>
+                }
+            }
+        </div>
+        @if (Model.user.Role == "Employee")
+        {
+            if (Model.user.Cv != null)
+            {
+                <h3 style="margin-top: 26px">My CV</h3>
+                <div style="border: 1px solid black; padding: 10px; font-size: 18px; font-weight: 500; border-radius: 6px; position: relative">
+                    <div class="position-absolute" style="top: 10px; right: 10px">
+                        <button type="submit" class="btn btn-primary w-100 px-5" onclick="location.href='@Url.Action("Edit", "CV")'">Edit</button>
+                    </div>
+                    <div>
+                        <p>Skills:</p>
+                        <ul>
+                            @foreach (var item in Model.user.Cv.Skills)
+                            {
+                                <li>@item.Name</li>
+                            }
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Educations:</p>
+                        <ul>
+                            @foreach (var item in Model.user.Cv.Educations)
+                            {
+                                <li>@item.Name   -   @item.Duration year</li>
+                            }
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Experiences:</p>
+                        <ul>
+                            @foreach (var item in Model.user.Cv.Experiences)
+                            {
+                                <li>@item.Name - @item.Duration year</li>
+                            }
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Summary: <span style="font-weight: 400">@Model.user.Cv.Summary</span></p>
+                    </div>
+                </div>
+            }
         }
     </div>
 </div>

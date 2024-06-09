@@ -23,7 +23,6 @@
                 @Html.Hidden("jobIdInterview", "", new { id = "jobIdInterview" })
                 @Html.Hidden("userIdInterview", "", new { id = "userIdInterview" })
                 <div class="modal-body" style="display: flex; flex-direction: column; gap: 4px">
-                    <input type="text" id="acceptMessage" class="form-control" name="message" placeholder="Enter your message...">
                     <input type="date" id="dateMessage" class="form-control" name="date" placeholder="Enter date...">
                     <input type="time" id="timeMessage" class="form-control" name="time" placeholder="Enter time...">
                     <input type="text" id="timeMessage" class="form-control" name="location" placeholder="Enter location...">
@@ -52,9 +51,6 @@
 
                 @Html.Hidden("jobIdAccept", "", new { id = "jobIdAccept" })
                 @Html.Hidden("userIdAccept", "", new { id = "userIdAccept" })
-                <div class="modal-body">
-                    <input type="text" id="acceptMessage" class="form-control" name="message" placeholder="Enter your message...">
-                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Send</button>

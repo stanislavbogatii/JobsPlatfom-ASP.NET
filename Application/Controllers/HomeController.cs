@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Application.Extensions;
 using Application.Domain.Entities.User;
+using Application.Models;
 
 namespace Application.Controllers
 {
@@ -24,8 +25,12 @@ namespace Application.Controllers
             userData.Name = session.Name;
             userData.Email = session.Email;
             userData.Role = session.Role;
+            var viewData = new HomeView
+            {
+                user = userData
+            };
 
-            return View(userData);
+            return View(viewData);
         }
     }
 }

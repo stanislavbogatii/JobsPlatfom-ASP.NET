@@ -2,37 +2,40 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AuthTemplate.cshtml";
 }
-@using (Html.BeginForm("Index", "Register", FormMethod.Post))
-{
-    <div class="d-flex justify-content-center">
-        <form class="d-flex flex-column w-100 justify-content-center align-items-center">
-            <div class="shadow"
-                 style="width: fit-content; align-self: center; padding: 50px; border: 1px solid black; border-radius: 15px">
-                <h3 class="w-100 text-center mb-5">Register</h3>
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Name</label>
-                    <input class="form-control" id="exampleInputPassword1" placeholder="Name" name="name">
-                </div>
+<div style="display: flex; gap: 30px; margin-top: 100px">
+    @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+    {
+        <div class="d-flex justify-content-center">
+            <form class="d-flex flex-column w-100 justify-content-center align-items-center">
+                <div class="shadow"
+                     style="width: fit-content; align-self: center; padding: 50px; border: 1px solid black; border-radius: 15px">
+                    <h3 class="w-100 text-center mb-5">Register</h3>
 
-                <div class="form-group" style="">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" style="width: 600px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Name</label>
+                        <input class="form-control" id="exampleInputPassword1" placeholder="Name" name="name">
+                    </div>
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-                </div>
-                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
-                    <input type="checkbox" style="" name="IsEmployer" value="true" />
-                    <label for="exampleInputPassword1" style="margin: 0;">Are you employer?</label>
-                </div>
+                    <div class="form-group" style="">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" style="width: 600px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                    </div>
 
-                <a href="@Url.Action("Index", "Login")">Login</a>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
-                <p class="text-danger">@ViewBag.ErrorMessage</p>
-            </div>
-        </form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                    </div>
+                    <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" style="" name="IsEmployer" value="true" />
+                        <label for="exampleInputPassword1" style="margin: 0;">Are you employer?</label>
+                    </div>
+
+                    <a href="@Url.Action("Index", "Login")">Login</a>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    <p class="text-danger">@ViewBag.ErrorMessage</p>
+                </div>
+            </form>
         </div>
-}
+    }
+    </div>

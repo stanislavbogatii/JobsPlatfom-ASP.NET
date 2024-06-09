@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Feedback";
+}
+
+@model Application.Models.ProfileFeedbackView
+
+<h2>Feedback</h2>
+<ul class="m-0 p-0"
+    style="list-style: none; display: flex; flex-direction: column; gap: 10px">
+    @foreach (var feedback in Model.feedback)
+    {
+        <li style=""
+            class="rounded-2 p-4 border border-black hover-pointer cursor-pointer">
+            @feedback.message
+        </li>
+    }
+</ul>
+

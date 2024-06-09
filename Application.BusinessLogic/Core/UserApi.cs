@@ -7,6 +7,7 @@ using Application.Domain.Enum;
 using Application.Helpers;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
@@ -30,6 +31,37 @@ namespace Application.BusinessLogic.Core
             if (user != null) return new ULoginResponse { IsSuccess = true };
 
             return new ULoginResponse { IsSuccess = false, Msg = "Email or Password is not correct" };
+        }
+
+        public List<InterviewDbTable> GetEmployeeInterviewService(int id)
+        {
+            using (var db = new UserContext())
+            {
+                return db.Interview.Where(i => i.userId == id).ToList();
+            }
+        }
+
+        public SimpleResponse UpdateUserPasswordService(int id, string newPassword, string prevPassword)
+        {
+            using (var db = new UserContext())
+            {
+                UDbTable user = db.Users.FirstOrDefault(u => u.Id == id);
+                if(user.Password != prevPassword)
+                {
+                    return new SimpleResponse { IsSuccess = false, Msg = "Incorect password!" };
+                }
+                user.Password = newPassword;
+                db.SaveChanges();
+                return new SimpleResponse { IsSuccess = true, Msg = "Success upate password" };
+            }
+        }
+
+        public List<JobFeedbackDbTable> GetEmployeeFeedbackService(int id)
+        {
+            using (var db = new UserContext())
+            {
+                return db.Feedback.Where(i => i.userId == id).ToList();
+            }
         }
 
         public URegisterResponse RRegisterService(URegisterData data)

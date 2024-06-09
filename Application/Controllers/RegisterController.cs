@@ -29,10 +29,10 @@ namespace Application.Controllers
         [HttpPost]
         public ActionResult Index(UserRegister registerData)
         {
-            URole role;
+            string role;
             if (registerData.IsEmployer)
-                role = URole.Employer;
-            else role = URole.Employee;
+                role = "Employer";
+            else role = "Employee";
 
             URegisterData data = new URegisterData
             {

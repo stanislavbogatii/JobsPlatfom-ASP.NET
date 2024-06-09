@@ -250,6 +250,10 @@
     <Compile Include="Migrations\202406091609134_update.designer.cs">
       <DependentUpon>202406091609134_update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202406092038194_role string.cs" />
+    <Compile Include="Migrations\202406092038194_role string.designer.cs">
+      <DependentUpon>202406092038194_role string.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
@@ -323,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406091609134_update.resx">
       <DependentUpon>202406091609134_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406092038194_role string.resx">
+      <DependentUpon>202406092038194_role string.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

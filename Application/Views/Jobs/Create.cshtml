@@ -1,4 +1,4 @@
-﻿@model Application.Models.Job.CreateJobModel
+﻿@model Application.Models.CreateJobView
 @{
     ViewBag.Title = "Create";
 }
@@ -12,47 +12,47 @@
             <div class="form-group">
                 <label>Company name</label>
                 <div style="display: flex; flex-direction: column; gap: 10px; width: 100%; min-width: 100%">
-                    @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control skill-input", placeholder = "Input your company name" })
-                    @Html.ValidationMessageFor(m => m.CompanyName, "", new { @class = "text-danger w-100" })
+                    @Html.TextBoxFor(m => m.jobData.CompanyName, new { @class = "form-control skill-input", placeholder = "Input your company name" })
+                    @Html.ValidationMessageFor(m => m.jobData.CompanyName, "", new { @class = "text-danger w-100" })
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Vacancy</label>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    @Html.TextBoxFor(m => m.Vacancy, new { @class = "form-control skill-input", placeholder = "Input vacancy name" })
-                    @Html.ValidationMessageFor(m => m.Vacancy, "", new { @class = "text-danger" })
+                    @Html.TextBoxFor(m => m.jobData.Vacancy, new { @class = "form-control skill-input", placeholder = "Input vacancy name" })
+                    @Html.ValidationMessageFor(m => m.jobData.Vacancy, "", new { @class = "text-danger" })
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Minimal experience</label>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    @Html.TextBoxFor(m => m.MinExp, new { @class = "form-control skill-input", type = "number", placeholder = "Input minimal experience (year)", min = "0" })
-                    @Html.ValidationMessageFor(m => m.MinExp, "", new { @class = "text-danger" })
+                    @Html.TextBoxFor(m => m.jobData.MinExp, new { @class = "form-control skill-input", type = "number", placeholder = "Input minimal experience (year)", min = "0" })
+                    @Html.ValidationMessageFor(m => m.jobData.MinExp, "", new { @class = "text-danger" })
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Salary</label>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    @Html.TextBoxFor(m => m.Salary, new { @class = "form-control skill-input", type = "number", placeholder = "Input salary (EUR)", min = "0" })
-                    @Html.ValidationMessageFor(m => m.Salary, "", new { @class = "text-danger" })
+                    @Html.TextBoxFor(m => m.jobData.Salary, new { @class = "form-control skill-input", type = "number", placeholder = "Input salary (EUR)", min = "0" })
+                    @Html.ValidationMessageFor(m => m.jobData.Salary, "", new { @class = "text-danger" })
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Work mode</label>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    @Html.DropDownListFor(m => m.WorkMode, new SelectList(new[] { "FullTime", "PartTime", "Remote", "NotSpecified" }), "select work mode", new { @class = "form-control skill-input" })
+                    @Html.DropDownListFor(m => m.jobData.WorkMode, new SelectList(new[] { "FullTime", "PartTime", "Remote", "NotSpecified" }), "select work mode", new { @class = "form-control skill-input" })
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Summary</label>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    @Html.TextAreaFor(m => m.Summary, new { @class = "form-control skill-input", placeholder = "Describe your job" })
-                    @Html.ValidationMessageFor(m => m.Summary, "", new { @class = "text-danger" })
+                    @Html.TextAreaFor(m => m.jobData.Summary, new { @class = "form-control skill-input", placeholder = "Describe your job" })
+                    @Html.ValidationMessageFor(m => m.jobData.Summary, "", new { @class = "text-danger" })
                 </div>
             </div>
 

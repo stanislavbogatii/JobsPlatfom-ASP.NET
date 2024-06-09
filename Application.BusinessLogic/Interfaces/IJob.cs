@@ -19,7 +19,7 @@ namespace Application.BusinessLogic.Interfaces
         SimpleResponse ApplyToJobAction(int jobId, int userId, string message);
         Job GetJobByIdAction(int Id);
         List<JobApplication> GetJobApplicationAction(int jobId);
-        SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location, string message);
-        SimpleResponse SendFeedbackAction(int userId, int jobId, string message);
+        SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location);
+        SimpleResponse SendFeedbackAction(int userId, int jobId);
     }
 }

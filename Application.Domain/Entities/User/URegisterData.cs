@@ -13,7 +13,7 @@ namespace Application.Domain.Entities.User
         public string Name { get; set; }
         public string Password { get; set; }
         public string LoginIp { get; set; }
-        public URole role { get; set; }
+        public string role { get; set; }
         public DateTime LoginDateTime { get; set; }
     }
 }

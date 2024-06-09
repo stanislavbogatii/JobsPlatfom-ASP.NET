@@ -207,11 +207,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreateJobView.cs" />
     <Compile Include="Models\cv\CreateCV.cs" />
+    <Compile Include="Models\HomeView.cs" />
+    <Compile Include="Models\JobsListCVVIewModel.cs" />
     <Compile Include="Models\Job\CreateJob.cs" />
     <Compile Include="Models\Job\JobDetailsViewModel.cs" />
     <Compile Include="Models\Job\JobFilters.cs" />
     <Compile Include="Models\Job\JobsListViewModel.cs" />
+    <Compile Include="Models\ProfileFeedbackView.cs" />
+    <Compile Include="Models\ProfileInterviewsView.cs" />
+    <Compile Include="Models\ProfileViewModel.cs" />
     <Compile Include="Models\User\EditProfile.cs" />
     <Compile Include="Models\User\UserData.cs" />
     <Compile Include="Models\User\UserLogin.cs" />
@@ -354,6 +360,8 @@
     <Content Include="Views\Jobs\MyJobs.cshtml" />
     <Content Include="Views\Jobs\JobDetails.cshtml" />
     <Content Include="Views\Jobs\CV.cshtml" />
+    <Content Include="Views\Profile\Interviews.cshtml" />
+    <Content Include="Views\Profile\Feedback.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

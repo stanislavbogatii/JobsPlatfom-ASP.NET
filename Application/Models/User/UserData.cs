@@ -13,6 +13,6 @@ namespace Application.Models.User
         public string Email { get; set; }
         public CVDbTable Cv { get; set; }
         public string photoPath { get; set; }
-        public URole Role { get; set; }
+        public string Role { get; set; }
     }
 }
