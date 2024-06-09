@@ -13,6 +13,26 @@ namespace Application.Controllers
     {
         private readonly IJob _job;
 
+        public ActionResult JobDetails(int id)
+        {
+            var job = _job.GetJobByIdAction(id);
+            var applications = _job.GetJobApplicationAction(id);
+
+            if (job == null)
+            {
+                return HttpNotFound();
+            }
+
+            var viewModel = new JobDetailsViewModel
+            {
+                job = job,
+                applications = applications
+            };
+
+            return View(viewModel);
+        }
+
+
         public JobsController()
         {
             var bl = new BusinessLogic.BusinessLogic();
@@ -27,6 +47,20 @@ namespace Application.Controllers
                 jobs = jobs,
                 filter = filter
                 
+            };
+            return View(viewModel);
+        }
+
+        public ActionResult MyJobs()
+        {
+            SessionStatus();
+            var session = System.Web.HttpContext.Current.GetSessionData();
+
+            List<Job> jobs = _job.GetUserJobs(session.Email);
+            var viewModel = new JobsListViewModel
+            {
+                jobs = jobs,
+
             };
             return View(viewModel);
         }

@@ -19,6 +19,16 @@ namespace Application.BusinessLogic
             this.jobApi = new JobApi();
         }
 
+        public Job GetJobByIdAction(int Id)
+        {
+            return jobApi.GetJobByIdService(Id);
+        }
+
+        public List<JobApplication> GetJobApplicationAction(int jobId)
+        {
+            return jobApi.GetJobApplycations(jobId);
+        }
+
         public SimpleResponse ApplyToJobAction(int jobId, string email)
         {
             return jobApi.ApplyToJobService(jobId, email);

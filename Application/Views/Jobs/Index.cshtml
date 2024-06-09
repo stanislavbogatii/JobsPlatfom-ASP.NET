@@ -7,9 +7,6 @@
 <div class="d-flex flex-column gap-4">
     <header style="display: flex;">
         <h2>Jobs</h2>
-        <div style="top: 10px; right: 10px; margin-left: auto">
-            <button type="submit" class="btn btn-primary w-100 px-5" onclick="location.href='@Url.Action("Create", "Jobs")'">Create job</button>
-        </div>
     </header>
 
     @if (TempData["SuccessMessage"] != null)

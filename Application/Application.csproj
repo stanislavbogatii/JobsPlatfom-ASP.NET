@@ -209,6 +209,7 @@
     </Compile>
     <Compile Include="Models\cv\CreateCV.cs" />
     <Compile Include="Models\Job\CreateJob.cs" />
+    <Compile Include="Models\Job\JobDetailsViewModel.cs" />
     <Compile Include="Models\Job\JobFilters.cs" />
     <Compile Include="Models\Job\JobsListViewModel.cs" />
     <Compile Include="Models\User\EditProfile.cs" />
@@ -350,6 +351,8 @@
     <Content Include="Views\CV\Edit.cshtml" />
     <Content Include="Views\Jobs\Create.cshtml" />
     <Content Include="Views\Profile\Edit.cshtml" />
+    <Content Include="Views\Jobs\MyJobs.cshtml" />
+    <Content Include="Views\Jobs\JobDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

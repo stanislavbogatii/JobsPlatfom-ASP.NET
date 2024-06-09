@@ -13,6 +13,7 @@ namespace Application.BusinessLogic.Core
 {
     public class JobApi
     {
+
         public CreateJobResponse CreateJobService(Job data, string ownerEmail)
         {
             using (var db = new UserContext())
@@ -89,11 +90,32 @@ namespace Application.BusinessLogic.Core
                     return new JobApplication
                     {
                         Id = application.Id,
-                        message = application.message
+                        message = application.message,
+                        userEmail = application.userEmail
                     };
                 }).ToList();
             }
             return applications;
+        }
+
+        public Job GetJobByIdService(int Id)
+        {
+            Job job = new Job();
+            using (var db = new UserContext())
+            {
+                JobDbTable dbJob = db.Jobs
+                    .Include(j => j.applications)
+                    .FirstOrDefault(j => j.Id == Id);
+
+                job.Salary = dbJob.Salary;
+                job.Summary = dbJob.Summary;
+                job.Vacancy = dbJob.Vacancy;
+                job.Id = dbJob.Id;
+                job.CompanyName = dbJob.CompanyName;
+                job.ApplicationCount = dbJob.applications.Count;
+                job.MinExp = dbJob.MinExp;
+            }
+            return job;
         }
 
         public SimpleResponse ApplyToJobService(int jobId, string email)
@@ -109,7 +131,7 @@ namespace Application.BusinessLogic.Core
                 if (user == null) return new SimpleResponse { IsSuccess = false, Msg = "User not found" };
                 if (job == null) return new SimpleResponse { IsSuccess = false, Msg = "Job not found" };
 
-                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Hello!" };
+                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Apply to job!", userEmail = user.Email };
                 user.applications.Add(newAplication);
                 job.applications.Add(newAplication);
                 db.SaveChanges();
@@ -128,6 +150,7 @@ namespace Application.BusinessLogic.Core
                     return null;
                 }
                 jobs = db.Jobs
+                    .Include(j => j.applications)
                     .Where(job => job.OwnerId == user.Id)
                     .ToList();
             }
@@ -141,9 +164,11 @@ namespace Application.BusinessLogic.Core
                     Salary = job.Salary,
                     Summary = job.Summary,
                     Vacancy = job.Vacancy,
-                    WorkMode = job.WorkMode
+                    WorkMode = job.WorkMode,
+                    ApplicationCount = job.applications.Count
                 };
-            });
+            }).ToList();
+            convertedJobs = convertedJobs.OrderByDescending(j => j.Id).ToList();
             return convertedJobs;
         }
     }

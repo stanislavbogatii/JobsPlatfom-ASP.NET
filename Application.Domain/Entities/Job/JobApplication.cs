@@ -11,6 +11,7 @@ namespace Application.Domain.Entities.Job
     public class JobApplication
     {
         public int Id { get; set; }
+        public string userEmail { get; set; }
 
         public string message { get; set; }
     }

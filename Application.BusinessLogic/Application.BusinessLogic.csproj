@@ -234,6 +234,10 @@
     <Compile Include="Migrations\202406081754291_Msg to Application.designer.cs">
       <DependentUpon>202406081754291_Msg to Application.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202406091213244_user email for application.cs" />
+    <Compile Include="Migrations\202406091213244_user email for application.designer.cs">
+      <DependentUpon>202406091213244_user email for application.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
@@ -295,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406081754291_Msg to Application.resx">
       <DependentUpon>202406081754291_Msg to Application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406091213244_user email for application.resx">
+      <DependentUpon>202406091213244_user email for application.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

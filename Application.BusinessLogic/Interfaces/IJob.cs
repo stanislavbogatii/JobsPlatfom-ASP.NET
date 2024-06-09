@@ -17,5 +17,7 @@ namespace Application.BusinessLogic.Interfaces
         List<Job> GetJobs(JobFilters filter);
         List<Job> GetUserJobs(string email);
         SimpleResponse ApplyToJobAction(int jobId, string email);
+        Job GetJobByIdAction(int Id);
+        List<JobApplication> GetJobApplicationAction(int jobId);
     }
 }
