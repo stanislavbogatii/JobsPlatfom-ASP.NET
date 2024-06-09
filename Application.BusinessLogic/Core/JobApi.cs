@@ -61,8 +61,18 @@ namespace Application.BusinessLogic.Core
                     ApplicationCount = job.applications.Count
                 };
             }).ToList();
+            if (filter.minSalary != null)
+            {
+                convertedJobs = convertedJobs.Where(j => j.Salary > filter.minSalary).ToList();
+            }
+            if (filter.maxExperience != null)
+            {
+                convertedJobs = convertedJobs.Where(j => j.MinExp < filter.maxExperience).ToList();
+            }
             if (filter.workMode != null)
+            {
                 convertedJobs = convertedJobs.Where(j => j.WorkMode.IndexOf(filter.workMode, System.StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            }
             return convertedJobs;
         }
 
