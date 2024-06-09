@@ -3,7 +3,7 @@ using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Extensions;
 using Application.Models.Job;
-using System.Collections.Generic;
+using System.Collections.Generic;   
 using System.Web.Mvc;
 using JobFilters = Application.Domain.Entities.Job.JobFilters;
 
@@ -14,14 +14,16 @@ namespace Application.Controllers
         private readonly IJob _job;
 
         [HttpPost]
-        public ActionResult Accept(string email, string message)
+        public ActionResult Accept(int jobIdAccept, int userIdAccept, string message)
         {
+            SimpleResponse response = _job.SendFeedbackAction(userIdAccept, jobIdAccept, message);
             return RedirectToAction("MyJobs");
         }
 
         [HttpPost]
-        public ActionResult ScheduleInterview(string email, string message, string date, string time)
+        public ActionResult ScheduleInterview(int jobIdInterview, int userIdInterview, string message, string date, string time)
         {
+            SimpleResponse response = _job.ScheduleFeedbackAction(userIdInterview, jobIdInterview, date, time, message);
             return RedirectToAction("MyJobs");
         }
 
@@ -82,7 +84,8 @@ namespace Application.Controllers
         {
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
-            SimpleResponse response = _job.ApplyToJobAction(id, session.Email);
+
+            SimpleResponse response = _job.ApplyToJobAction(id, session.Id);
 
             if (response.IsSuccess == true)
                 TempData["SuccessMessage"] = response.Msg;

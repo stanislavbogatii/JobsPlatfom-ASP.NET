@@ -17,5 +17,7 @@ namespace Application.Domain.Entities.Job
         public string date { get; set; }
         public string time { get; set; }
         public string message { get; set; }
+        public int userId { get; set; }
+        public int jobId { get; set; }
     }
 }

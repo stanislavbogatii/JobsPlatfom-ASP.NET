@@ -111,6 +111,7 @@ namespace Application.BusinessLogic.Core
 
             var user = new User
             {
+                Id = curentUser.Id,
                 Email = curentUser.Email,
                 Name = curentUser.Name,
                 Role = curentUser.Role,

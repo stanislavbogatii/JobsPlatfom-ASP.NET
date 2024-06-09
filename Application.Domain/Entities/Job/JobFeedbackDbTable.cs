@@ -14,5 +14,7 @@ namespace Application.Domain.Entities.Job
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string message { get; set; }
+        public int userId { get; set; }
+        public int jobId { get; set; }
     }
 }

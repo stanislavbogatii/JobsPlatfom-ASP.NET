@@ -242,6 +242,14 @@
     <Compile Include="Migrations\202406091416457_feedbacks &amp; interview mdoels.designer.cs">
       <DependentUpon>202406091416457_feedbacks &amp; interview mdoels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202406091433324_Update models udb &amp; jobdb.cs" />
+    <Compile Include="Migrations\202406091433324_Update models udb &amp; jobdb.designer.cs">
+      <DependentUpon>202406091433324_Update models udb &amp; jobdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406091609134_update.cs" />
+    <Compile Include="Migrations\202406091609134_update.designer.cs">
+      <DependentUpon>202406091609134_update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
@@ -309,6 +317,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406091416457_feedbacks &amp; interview mdoels.resx">
       <DependentUpon>202406091416457_feedbacks &amp; interview mdoels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406091433324_Update models udb &amp; jobdb.resx">
+      <DependentUpon>202406091433324_Update models udb &amp; jobdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406091609134_update.resx">
+      <DependentUpon>202406091609134_update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

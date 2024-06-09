@@ -42,6 +42,53 @@ namespace Application.BusinessLogic.Core
             return new CreateJobResponse { IsSuccess = true, Msg = "success" };
         }
 
+        public SimpleResponse SendFeedbackService(int userId, int jobId, string message)
+        {
+            using (var db = new UserContext())
+            {
+                UDbTable user = db.Users.FirstOrDefault(u => u.Id == userId);
+                JobDbTable job = db.Jobs.FirstOrDefault(j => j.Id == jobId);
+
+                JobFeedbackDbTable newFeedback = new JobFeedbackDbTable
+                {
+                    message = message,
+                    jobId = job.Id,
+                    userId = userId
+                };
+
+                user.feedbacks.Add(newFeedback);
+                job.feedbacks.Add(newFeedback);
+
+                db.SaveChanges();
+            }
+            return new SimpleResponse { IsSuccess = true, Msg = "Success send feedback" };
+        }
+
+
+        public SimpleResponse SchelduleInterviewService(int userId, int jobId, string date, string time, string message)
+        {
+            using (var db = new UserContext())
+            {
+                UDbTable user = db.Users.FirstOrDefault(u => u.Id == userId);
+                JobDbTable job = db.Jobs.FirstOrDefault(j => j.Id == jobId);
+
+                InterviewDbTable newInterview = new InterviewDbTable
+                {
+                    message = message,
+                    jobId = job.Id,
+                    userId = userId,
+                    date = date,
+                    time = time
+                };
+
+                user.interviews.Add(newInterview);
+                job.interviews.Add(newInterview);
+
+                db.SaveChanges();
+            }
+            return new SimpleResponse { IsSuccess = true, Msg = "Success schedule interview" };
+        }
+
         public List<Job> GetJobsService(JobFilters filter)
         {
             List<JobDbTable> jobs;
@@ -91,7 +138,9 @@ namespace Application.BusinessLogic.Core
                     {
                         Id = application.Id,
                         message = application.message,
-                        userEmail = application.userEmail
+                        userEmail = application.userEmail,
+                        userId = application.userId,
+                        jobId = application.jobId
                     };
                 }).ToList();
             }
@@ -118,11 +167,11 @@ namespace Application.BusinessLogic.Core
             return job;
         }
 
-        public SimpleResponse ApplyToJobService(int jobId, string email)
+        public SimpleResponse ApplyToJobService(int jobId, int userId)
         {
             using (var db = new UserContext())
             {
-                UDbTable user = db.Users.Include(u=>u.applications).FirstOrDefault(u => u.Email == email);
+                UDbTable user = db.Users.Include(u=>u.applications).FirstOrDefault(u => u.Id == userId);
                 JobDbTable job = db.Jobs.FirstOrDefault(j => j.Id == jobId);
                 List<JobApplication> jobApplications = this.GetJobApplycations(jobId);
                 bool hasMatchingApplications = user.applications.Any(userApp => jobApplications.Any(jobApp => jobApp.Id == userApp.Id));
@@ -131,7 +180,7 @@ namespace Application.BusinessLogic.Core
                 if (user == null) return new SimpleResponse { IsSuccess = false, Msg = "User not found" };
                 if (job == null) return new SimpleResponse { IsSuccess = false, Msg = "Job not found" };
 
-                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Apply to job!", userEmail = user.Email };
+                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Apply to job!", userEmail = user.Email, userId = userId, jobId = jobId };
                 user.applications.Add(newAplication);
                 job.applications.Add(newAplication);
                 db.SaveChanges();
