@@ -78,6 +78,7 @@
     <Compile Include="Entities\Job\JobApplication.cs" />
     <Compile Include="Entities\Job\JobApplicationsDbTable.cs" />
     <Compile Include="Entities\Job\JobDbTable.cs" />
+    <Compile Include="Entities\Job\JobFilters.cs" />
     <Compile Include="Entities\Response\CreateCVResponse.cs" />
     <Compile Include="Entities\Response\CreateJobResponse.cs" />
     <Compile Include="Entities\Response\SimpleResponse.cs" />

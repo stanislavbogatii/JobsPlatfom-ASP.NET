@@ -26,6 +26,27 @@
         </div>
     }
 
+    @using (Html.BeginForm("Index", "Jobs", FormMethod.Get))
+    {
+        <div class="d-flex flex-column gap-2 mb-4">
+            <div>
+                <label for="CompanyName">Max experience:</label>
+                @Html.TextBoxFor(m => m.filter.maxExperience, new { @class = "form-control", @id = "maxExperience", type="number", min=0 })
+            </div>
+            <div>
+                <label for="WorkMode">Minimal salary:</label>
+                @Html.TextBoxFor(m => m.filter.minSalary, new { @class = "form-control", type="number", min=0, @id = "minSalary" })
+            </div>
+            <div>
+                <label for="MinExperience">Work mode:</label>
+                @Html.DropDownListFor(m => m.filter.workMode, new SelectList(new[] { "FullTime", "PartTime", "Remote", "NotSpecified" }), "select work mode", new { @class = "form-control skill-input", @id = "minSalary" })
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </div>
+        </div>
+    }
+
     <ul class="m-0 p-0"
         style="list-style: none; display: flex; flex-direction: column; gap: 10px">
         @foreach (var job in Model.jobs)

@@ -10,16 +10,8 @@ namespace Application.Domain.Entities.Job
 {
     public class JobApplication
     {
-        public int JobApplicationId { get; set; }
+        public int Id { get; set; }
 
-        [ForeignKey("UDbTable")]
-        public int UserId { get; set; }
-        public UDbTable User { get; set; }
-
-        [ForeignKey("JobDbTable")]
-        public int JobId { get; set; }
-        public JobDbTable Job { get; set; }
-
-        public DateTime ApplicationDate { get; set; }
+        public string message { get; set; }
     }
 }

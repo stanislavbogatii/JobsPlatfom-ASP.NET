@@ -29,9 +29,9 @@ namespace Application.BusinessLogic
             return jobApi.CreateJobService(data, ownerEmail);
         }
 
-        public List<Job> GetJobs()
+        public List<Job> GetJobs(JobFilters filter)
         {
-            return jobApi.GetJobsService();
+            return jobApi.GetJobsService(filter);
         }
 
         public List<Job> GetUserJobs(string email)

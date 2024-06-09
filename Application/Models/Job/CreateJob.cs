@@ -19,7 +19,7 @@ namespace Application.Models.Job
         public string Vacancy { get; set; }
 
         [Required(ErrorMessage = "Work Mode is required")]
-        public JobModType WorkMode { get; set; }
+        public string WorkMode { get; set; }
 
         [Required(ErrorMessage = "Summary is required")]
         public string Summary { get; set; }

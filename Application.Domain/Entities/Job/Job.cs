@@ -16,7 +16,7 @@ namespace Application.Domain.Entities.Job
         public string Vacancy { get; set; }
 
         [Required]
-        public JobModType WorkMode { get; set; }
+        public string WorkMode { get; set; }
 
         public string Summary { get; set; }
 

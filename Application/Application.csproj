@@ -209,6 +209,7 @@
     </Compile>
     <Compile Include="Models\cv\CreateCV.cs" />
     <Compile Include="Models\Job\CreateJob.cs" />
+    <Compile Include="Models\Job\JobFilters.cs" />
     <Compile Include="Models\Job\JobsListViewModel.cs" />
     <Compile Include="Models\User\EditProfile.cs" />
     <Compile Include="Models\User\UserData.cs" />

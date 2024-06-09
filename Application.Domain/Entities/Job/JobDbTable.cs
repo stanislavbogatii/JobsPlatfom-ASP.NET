@@ -26,7 +26,6 @@ namespace Application.Domain.Entities.Job
 
         [Required]
         [Column("WorkMode")]
-        [EnumDataType(typeof(JobModType))]
         public string WorkMode { get; set; }
 
         public string Summary { get; set; }

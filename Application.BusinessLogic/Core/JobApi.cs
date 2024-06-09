@@ -40,9 +40,8 @@ namespace Application.BusinessLogic.Core
             return new CreateJobResponse { IsSuccess = true, Msg = "success" };
         }
 
-        public List<Job> GetJobsService()
+        public List<Job> GetJobsService(JobFilters filter)
         {
-
             List<JobDbTable> jobs;
             using (var db = new UserContext())
             {
@@ -58,21 +57,46 @@ namespace Application.BusinessLogic.Core
                     Salary = job.Salary,
                     Summary = job.Summary,  
                     Vacancy = job.Vacancy,
-                    WorkMode = (JobModType)Enum.Parse(typeof(JobModType), job.WorkMode),
+                    WorkMode = job.WorkMode,
                     ApplicationCount = job.applications.Count
                 };
             }).ToList();
+            if (filter.workMode != null)
+                convertedJobs = convertedJobs.Where(j => j.WorkMode.IndexOf(filter.workMode, System.StringComparison.OrdinalIgnoreCase) >= 0).ToList();
             return convertedJobs;
+        }
+
+        public List<JobApplication> GetJobApplycations(int jobId)
+        {
+            List<JobApplication> applications;
+            using (var db = new UserContext())
+            {
+                JobDbTable job = db.Jobs.Include(j => j.applications).FirstOrDefault(j => j.Id == jobId);
+                applications = job.applications.Select(application =>
+                {
+                    return new JobApplication
+                    {
+                        Id = application.Id,
+                        message = application.message
+                    };
+                }).ToList();
+            }
+            return applications;
         }
 
         public SimpleResponse ApplyToJobService(int jobId, string email)
         {
             using (var db = new UserContext())
             {
-                UDbTable user = db.Users.FirstOrDefault(u => u.Email == email);
+                UDbTable user = db.Users.Include(u=>u.applications).FirstOrDefault(u => u.Email == email);
                 JobDbTable job = db.Jobs.FirstOrDefault(j => j.Id == jobId);
+                List<JobApplication> jobApplications = this.GetJobApplycations(jobId);
+                bool hasMatchingApplications = user.applications.Any(userApp => jobApplications.Any(jobApp => jobApp.Id == userApp.Id));
+                if (hasMatchingApplications) return new SimpleResponse { IsSuccess = false, Msg = "You have already applied for this advertisement" };
+
                 if (user == null) return new SimpleResponse { IsSuccess = false, Msg = "User not found" };
                 if (job == null) return new SimpleResponse { IsSuccess = false, Msg = "Job not found" };
+
                 JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Hello!" };
                 user.applications.Add(newAplication);
                 job.applications.Add(newAplication);
@@ -80,8 +104,6 @@ namespace Application.BusinessLogic.Core
             }
             return new SimpleResponse { IsSuccess = true, Msg = "Success!" };
         }
-
-
 
         public List<Job> GetUserJobsService(string email)
         {
@@ -107,7 +129,7 @@ namespace Application.BusinessLogic.Core
                     Salary = job.Salary,
                     Summary = job.Summary,
                     Vacancy = job.Vacancy,
-                    WorkMode = (JobModType)Enum.Parse(typeof(JobModType), job.WorkMode)
+                    WorkMode = job.WorkMode
                 };
             });
             return convertedJobs;

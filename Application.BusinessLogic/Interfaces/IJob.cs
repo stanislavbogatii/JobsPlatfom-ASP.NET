@@ -14,7 +14,7 @@ namespace Application.BusinessLogic.Interfaces
     public interface IJob
     {
         CreateJobResponse CreateJobAction(Job data, string ownerEmail);
-        List<Job> GetJobs();
+        List<Job> GetJobs(JobFilters filter);
         List<Job> GetUserJobs(string email);
         SimpleResponse ApplyToJobAction(int jobId, string email);
     }

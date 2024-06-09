@@ -5,23 +5,28 @@ using Application.Extensions;
 using Application.Models.Job;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using JobFilters = Application.Domain.Entities.Job.JobFilters;
 
 namespace Application.Controllers
 {
     public class JobsController : BaseController
     {
         private readonly IJob _job;
+
         public JobsController()
         {
             var bl = new BusinessLogic.BusinessLogic();
             _job = bl.GetJobBL();
         }
-        public ActionResult Index()
+
+        public ActionResult Index(Application.Domain.Entities.Job.JobFilters filter)
         {
-            List<Job> jobs = _job.GetJobs();
+            List<Job> jobs = _job.GetJobs(filter);
             var viewModel = new JobsListViewModel
             {
-                jobs = jobs
+                jobs = jobs,
+                filter = filter
+                
             };
             return View(viewModel);
         }
