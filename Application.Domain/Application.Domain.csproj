@@ -74,10 +74,14 @@
   <ItemGroup>
     <Compile Include="Entities\CV\CV.cs" />
     <Compile Include="Entities\CV\CVDbTable.cs" />
+    <Compile Include="Entities\Job\Interview.cs" />
+    <Compile Include="Entities\Job\InterviewDbTable.cs" />
     <Compile Include="Entities\Job\Job.cs" />
     <Compile Include="Entities\Job\JobApplication.cs" />
     <Compile Include="Entities\Job\JobApplicationsDbTable.cs" />
     <Compile Include="Entities\Job\JobDbTable.cs" />
+    <Compile Include="Entities\Job\JobFeedback.cs" />
+    <Compile Include="Entities\Job\JobFeedbackDbTable.cs" />
     <Compile Include="Entities\Job\JobFilters.cs" />
     <Compile Include="Entities\Response\CreateCVResponse.cs" />
     <Compile Include="Entities\Response\CreateJobResponse.cs" />

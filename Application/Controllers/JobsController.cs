@@ -13,6 +13,18 @@ namespace Application.Controllers
     {
         private readonly IJob _job;
 
+        [HttpPost]
+        public ActionResult Accept(string email, string message)
+        {
+            return RedirectToAction("MyJobs");
+        }
+
+        [HttpPost]
+        public ActionResult ScheduleInterview(string email, string message, string date, string time)
+        {
+            return RedirectToAction("MyJobs");
+        }
+
         public ActionResult JobDetails(int id)
         {
             var job = _job.GetJobByIdAction(id);

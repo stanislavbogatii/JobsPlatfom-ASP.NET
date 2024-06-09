@@ -135,3 +135,4 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogi
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations._new.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.MsgtoApplication.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.useremailforapplication.resources
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.feedbacksinterviewmdoels.resources

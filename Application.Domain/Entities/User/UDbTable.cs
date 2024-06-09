@@ -47,6 +47,8 @@ namespace Application.Domain.Entities.User
         public virtual CVDbTable CV { get; set; }
 
         public virtual ICollection<JobApplicationsDbTable> applications { get; set; }
+        public virtual ICollection<InterviewDbTable> interviews { get; set; }
+        public virtual ICollection<JobFeedbackDbTable> feedbacks { get; set; }
 
     }
 }

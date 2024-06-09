@@ -5,7 +5,99 @@
 
 @model Application.Models.Job.JobDetailsViewModel
 
-<h2>JobDetails</h2>
-<div>
-    <p>@Model.job.CompanyName    </p>
+<div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="acceptModalLabel">Accept Job</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @using (Html.BeginForm("Accept", "Jobs", FormMethod.Post))
+            {
+                @Html.Hidden("email", "", new { id = "email" })
+                <div class="modal-body">
+                    <input type="text" id="acceptMessage" class="form-control" name="message" placeholder="Enter your message...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            }
+        </div>
+    </div>
 </div>
+
+<!-- Модальное окно для кнопки "Schedule an interview" -->
+<div class="modal fade" id="interviewModal" tabindex="-1" role="dialog" aria-labelledby="interviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="interviewModalLabel">Schedule an Interview</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @using (Html.BeginForm("ScheduleInterview", "Jobs", FormMethod.Post))
+            {
+                @Html.Hidden("email", "", new { id = "email" })
+                <div class="modal-body">
+                    <input type="text" id="interviewMessage" class="form-control" name="message" placeholder="Enter your message...">
+                    <input type="date" id="interviewDate" class="form-control" name="date" placeholder="Enter date">
+                    <input type="time" id="interviewTime" class="form-control" name="time" placeholder="Enter time">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<h2>JobDetails</h2>
+<div style="font-size: 24px; padding-top: 16px">
+    <div>
+        <p class="m-0">Vacancy: @Model.job.Vacancy</p>
+    </div>
+    <div>
+        <p class="m-0">Minimal experience: @Model.job.MinExp</p>
+    </div>
+    <div>
+        <p class="m-0">Salarry: @Model.job.Salary$</p>
+    </div>
+    <div>
+        <p class="m-0">Applications: @Model.job.ApplicationCount</p>
+    </div>
+</div>
+
+<h4 style="margin-top: 20px; color: gray">Job applications:</h4>
+<div style="display: flex; width: 100%; flex-direction: column; gap: 5px">
+    @foreach (var application in Model.applications)
+    {
+        <div style="border: 1px solid gray; border-radius: 5px; padding: 5px; flex: 1; width: 100%; display: flex">
+            <div style="display: flex; flex-direction: column; max-width: 600px">
+                <p style="margin: 0">User email: @application.userEmail</p>
+                <p style="margin: 0">Message: @application.message</p>
+            </div>
+            <div style="margin-left: auto">
+                <button class="btn btn-primary" onclick="showAcceptModal('@application.userEmail')">Accept</button>
+                <button class="btn btn-primary" onclick="showInterviewModal('@application.userEmail')">Schedule an interview</button>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    function showAcceptModal(email) {
+        $('#email').val(email);
+        $('#acceptModal').modal('show');
+    }
+
+    function showInterviewModal(email) {
+        $('#email').val(email);
+        $('#interviewModal').modal('show');
+    }
+</script>

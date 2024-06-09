@@ -33,6 +33,8 @@ namespace Application.BusinessLogic.DBModel
         public virtual DbSet<Session> Sessions { get; set; }
         public virtual DbSet<JobDbTable> Jobs { get; set; }
         public virtual DbSet<JobApplicationsDbTable> JobApplications { get; set; }
+        public virtual DbSet<InterviewDbTable> Interview { get; set; }
+        public virtual DbSet<JobFeedbackDbTable> Feedback { get; set; }
 
 
     }

@@ -37,8 +37,8 @@ namespace Application.Domain.Entities.Job
         public int OwnerId { get; set; }
 
         public virtual UDbTable Owner { get; set; }
-
-        public virtual ICollection<UDbTable> InterestedUsers { get; set; }
         public virtual ICollection<JobApplicationsDbTable> applications { get; set; }
+        public virtual ICollection<InterviewDbTable> interviews { get; set; }
+        public virtual ICollection<JobFeedbackDbTable> feedbacks { get; set; }
     }
 }
