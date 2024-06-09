@@ -1,4 +1,5 @@
 ﻿using Application.Domain.Entities.CV;
+using Application.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace Application.Models.User
         public string Email { get; set; }
         public CVDbTable Cv { get; set; }
         public string photoPath { get; set; }
+        public URole Role { get; set; }
     }
 }

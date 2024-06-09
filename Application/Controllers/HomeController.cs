@@ -23,6 +23,7 @@ namespace Application.Controllers
             UserData userData = new UserData();
             userData.Name = session.Name;
             userData.Email = session.Email;
+            userData.Role = session.Role;
 
             return View(userData);
         }

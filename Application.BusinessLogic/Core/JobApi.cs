@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace Application.BusinessLogic.Core
 {
@@ -58,7 +59,7 @@ namespace Application.BusinessLogic.Core
                     Summary = job.Summary,  
                     Vacancy = job.Vacancy,
                     WorkMode = job.WorkMode,
-                    ApplicationCount = job.applications.Count
+                    ApplicationCount = job.applications.Count,
                 };
             }).ToList();
             if (filter.minSalary != null)
@@ -73,6 +74,7 @@ namespace Application.BusinessLogic.Core
             {
                 convertedJobs = convertedJobs.Where(j => j.WorkMode.IndexOf(filter.workMode, System.StringComparison.OrdinalIgnoreCase) >= 0).ToList();
             }
+            convertedJobs = convertedJobs.OrderByDescending(j => j.Id).ToList();
             return convertedJobs;
         }
 

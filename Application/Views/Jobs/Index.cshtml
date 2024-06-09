@@ -28,7 +28,7 @@
 
     @using (Html.BeginForm("Index", "Jobs", FormMethod.Get))
     {
-        <div class="d-flex flex-column gap-2 mb-4">
+        <div class="d-flex gap-2 mb-4 align-items-end">
             <div>
                 <label for="CompanyName">Max experience:</label>
                 @Html.TextBoxFor(m => m.filter.maxExperience, new { @class = "form-control", @id = "maxExperience", type="number", min=0 })
@@ -68,6 +68,9 @@
                          style="color: gray; width: 100%;">
                         <div>
                             <p style="font-weight: 500">Experience: <span style="font-weight: 400">@job.MinExp years</span></p>
+                        </div>
+                        <div>
+                            <p style="font-weight: 500">Salary: <span style="font-weight: 400">@job.Salary$</span></p>
                         </div>
                         <div>
                             <p style="font-weight: 500">Work mode: <span style="font-weight: 400">@job.WorkMode</span></p>
