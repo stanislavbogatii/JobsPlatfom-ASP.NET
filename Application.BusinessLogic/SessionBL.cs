@@ -45,6 +45,11 @@ namespace Application.BusinessLogic
             return userApi.RGenCookie(Email);
         }
 
+        public CVDbTable GetCVByUserIdService(int userId)
+        {
+            return userApi.GetCVByUserIdService(userId);
+        }
+
         public User GetUserByCookie(string CookieValue)
         {
             return userApi.RGetUserByCookie(CookieValue);

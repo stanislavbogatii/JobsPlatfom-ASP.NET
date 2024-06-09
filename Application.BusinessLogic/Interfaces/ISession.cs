@@ -16,6 +16,7 @@ namespace Application.BusinessLogic.Interfaces
         URegisterResponse UserRegistrationAction(URegisterData data);
         HttpCookie GenCookie(string Email);
         User GetUserByCookie(string CookieValue);
+        CVDbTable GetCVByUserIdService(int userId);
         CreateCVResponse CVCreateAction(CV data, string userEmail);
         SimpleResponse EditUserAction(UpdateUserModel data, string email);
         CreateCVResponse CVEditAction(CV data, int cvId);

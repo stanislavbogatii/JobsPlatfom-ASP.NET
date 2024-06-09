@@ -122,6 +122,22 @@ namespace Application.BusinessLogic.Core
             return user;
         }
 
+        public CVDbTable GetCVByUserIdService(int userId)
+        {
+            CVDbTable cv = new CVDbTable();
+            using (var db = new UserContext())
+            {
+                UDbTable user = db.Users
+                    .Include(u => u.CV)
+                    .Include(u => u.CV.Educations)
+                    .Include(u => u.CV.Skills)
+                    .Include(u => u.CV.Experiences)
+                    .FirstOrDefault(u => u.Id == userId);
+                cv = user.CV;
+            }
+            return cv;
+        }
+
         public HttpCookie RGenCookie(string Email)
         {
             var apiCookie = new HttpCookie("X-KEY")

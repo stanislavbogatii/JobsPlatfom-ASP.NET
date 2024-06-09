@@ -1,4 +1,5 @@
 ﻿using Application.BusinessLogic.Interfaces;
+using Application.Domain.Entities.CV;
 using Application.Domain.Entities.Job;
 using Application.Domain.Entities.Response;
 using Application.Extensions;
@@ -12,6 +13,13 @@ namespace Application.Controllers
     public class JobsController : BaseController
     {
         private readonly IJob _job;
+        private readonly ISession _session;
+        public JobsController()
+        {
+            var bl = new BusinessLogic.BusinessLogic();
+            _job = bl.GetJobBL();
+            _session = bl.GetSessionBL();
+        }
 
         [HttpPost]
         public ActionResult Accept(int jobIdAccept, int userIdAccept, string message)
@@ -21,9 +29,9 @@ namespace Application.Controllers
         }
 
         [HttpPost]
-        public ActionResult ScheduleInterview(int jobIdInterview, int userIdInterview, string message, string date, string time)
+        public ActionResult ScheduleInterview(int jobIdInterview, int userIdInterview, string message, string date, string location, string time)
         {
-            SimpleResponse response = _job.ScheduleFeedbackAction(userIdInterview, jobIdInterview, date, time, message);
+            SimpleResponse response = _job.ScheduleFeedbackAction(userIdInterview, jobIdInterview, date, time, location, message);
             return RedirectToAction("MyJobs");
         }
 
@@ -46,12 +54,6 @@ namespace Application.Controllers
             return View(viewModel);
         }
 
-
-        public JobsController()
-        {
-            var bl = new BusinessLogic.BusinessLogic();
-            _job = bl.GetJobBL();
-        }
 
         public ActionResult Index(Application.Domain.Entities.Job.JobFilters filter)
         {
@@ -79,13 +81,19 @@ namespace Application.Controllers
             return View(viewModel);
         }
 
+        public ActionResult CV(int id)
+        {
+            CVDbTable cv = _session.GetCVByUserIdService(id);
+            return View(cv);
+        }
+
         [HttpPost]
-        public ActionResult Apply(int id)
+        public ActionResult Apply(int id, string message)
         {
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
 
-            SimpleResponse response = _job.ApplyToJobAction(id, session.Id);
+            SimpleResponse response = _job.ApplyToJobAction(id, session.Id, message);
 
             if (response.IsSuccess == true)
                 TempData["SuccessMessage"] = response.Msg;

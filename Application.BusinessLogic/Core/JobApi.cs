@@ -65,7 +65,7 @@ namespace Application.BusinessLogic.Core
         }
 
 
-        public SimpleResponse SchelduleInterviewService(int userId, int jobId, string date, string time, string message)
+        public SimpleResponse SchelduleInterviewService(int userId, int jobId, string date, string time, string location, string message)
         {
             using (var db = new UserContext())
             {
@@ -78,7 +78,8 @@ namespace Application.BusinessLogic.Core
                     jobId = job.Id,
                     userId = userId,
                     date = date,
-                    time = time
+                    time = time,
+                    location = location
                 };
 
                 user.interviews.Add(newInterview);
@@ -167,7 +168,7 @@ namespace Application.BusinessLogic.Core
             return job;
         }
 
-        public SimpleResponse ApplyToJobService(int jobId, int userId)
+        public SimpleResponse ApplyToJobService(int jobId, int userId, string message)
         {
             using (var db = new UserContext())
             {
@@ -180,7 +181,7 @@ namespace Application.BusinessLogic.Core
                 if (user == null) return new SimpleResponse { IsSuccess = false, Msg = "User not found" };
                 if (job == null) return new SimpleResponse { IsSuccess = false, Msg = "Job not found" };
 
-                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = "Apply to job!", userEmail = user.Email, userId = userId, jobId = jobId };
+                JobApplicationsDbTable newAplication = new JobApplicationsDbTable { message = message, userEmail = user.Email, userId = userId, jobId = jobId };
                 user.applications.Add(newAplication);
                 job.applications.Add(newAplication);
                 db.SaveChanges();

@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "CV";
+}
+
+@model Application.Domain.Entities.CV.CVDbTable
+
+<div>
+        <h3 style="margin-top: 26px">User CV</h3>
+        <div style="border: 1px solid black; padding: 10px; font-size: 18px; font-weight: 500; border-radius: 6px; position: relative">
+            <div>
+                <p>Skills:</p>
+                <ul>
+                    @foreach (var item in Model.Skills)
+                    {
+                        <li>@item.Name</li>
+                    }
+                </ul>
+            </div>
+            <div>
+                <p>Educations:</p>
+                <ul>
+                    @foreach (var item in Model.Educations)
+                    {
+                        <li>@item.Name   -   @item.Duration year</li>
+                    }
+                </ul>
+            </div>
+            <div>
+                <p>Experiences:</p>
+                <ul>
+                    @foreach (var item in Model.Experiences)
+                    {
+                        <li>@item.Name - @item.Duration year</li>
+                    }
+                </ul>
+            </div>
+            <div>
+                <p>Summary: <span style="font-weight: 400">@Model.Summary</span></p>
+            </div>
+        </div>
+</div>
+

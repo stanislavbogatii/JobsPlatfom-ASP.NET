@@ -29,9 +29,9 @@ namespace Application.BusinessLogic
             return jobApi.SendFeedbackService(userId, jobId, message);
         }
 
-        public SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string message)
+        public SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location, string message)
         {
-            return jobApi.SchelduleInterviewService(userId, jobId, date, time, message);
+            return jobApi.SchelduleInterviewService(userId, jobId, date, time, location, message);
         }
 
         public List<JobApplication> GetJobApplicationAction(int jobId)
@@ -39,9 +39,9 @@ namespace Application.BusinessLogic
             return jobApi.GetJobApplycations(jobId);
         }
 
-        public SimpleResponse ApplyToJobAction(int jobId, int userId)
+        public SimpleResponse ApplyToJobAction(int jobId, int userId, string message)
         {
-            return jobApi.ApplyToJobService(jobId, userId);
+            return jobApi.ApplyToJobService(jobId, userId, message);
         }
 
         public CreateJobResponse CreateJobAction(Job data, string ownerEmail)

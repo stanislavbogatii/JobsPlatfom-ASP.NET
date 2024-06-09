@@ -16,10 +16,10 @@ namespace Application.BusinessLogic.Interfaces
         CreateJobResponse CreateJobAction(Job data, string ownerEmail);
         List<Job> GetJobs(JobFilters filter);
         List<Job> GetUserJobs(string email);
-        SimpleResponse ApplyToJobAction(int jobId, int userId);
+        SimpleResponse ApplyToJobAction(int jobId, int userId, string message);
         Job GetJobByIdAction(int Id);
         List<JobApplication> GetJobApplicationAction(int jobId);
-        SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string message);
+        SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location, string message);
         SimpleResponse SendFeedbackAction(int userId, int jobId, string message);
     }
 }

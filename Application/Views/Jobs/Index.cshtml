@@ -96,11 +96,16 @@
                 Are you sure you want to apply for this job?
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                @using (Html.BeginForm("Apply", "Jobs", FormMethod.Post, new { id = "applyForm" }))
+                @using (Html.BeginForm("Apply", "Jobs", FormMethod.Post, new { id = "applyForm", style = "width: 100%" }))
                 {
                     @Html.Hidden("id", "", new { id = "jobId" })
-                    <button type="submit" class="btn btn-primary">Yes, Apply</button>
+                    <input type="text" id="timeMessage" class="form-control" name="message" style="width: 100%" placeholder="Enter message...">
+                    <div style="display: flex; align-items: end; gap: 10px;">
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px">Yes, Apply</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                    
+
                 }
             </div>
         </div>
