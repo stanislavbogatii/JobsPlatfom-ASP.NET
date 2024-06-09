@@ -39,6 +39,11 @@ namespace Application.BusinessLogic
             return jobApi.GetJobApplycations(jobId);
         }
 
+        public SimpleResponse DeleteJobAction(int jobId)
+        {
+            return jobApi.DeleteJobService(jobId);
+        }
+
         public SimpleResponse ApplyToJobAction(int jobId, int userId, string message)
         {
             return jobApi.ApplyToJobService(jobId, userId, message);

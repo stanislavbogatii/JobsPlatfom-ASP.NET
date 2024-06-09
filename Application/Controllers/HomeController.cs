@@ -17,14 +17,23 @@ namespace Application.Controllers
         {
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
+
+            UserData userData;
             if (session == null)
             {
-                return RedirectToAction("Index", "Login");
+                userData = null;
             }
-            UserData userData = new UserData();
-            userData.Name = session.Name;
-            userData.Email = session.Email;
-            userData.Role = session.Role;
+            else
+            {
+                userData = new UserData
+                {
+                    Name = session.Name,
+                    Email = session.Email,
+                    Role = session.Role
+                };
+            }
+
+
             var viewData = new HomeView
             {
                 user = userData

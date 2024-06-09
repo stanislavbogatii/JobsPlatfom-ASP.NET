@@ -139,3 +139,4 @@ C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogi
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.Updatemodelsudbjobdb.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.update.resources
 C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.rolestring.resources
+C:\Users\Stanislav\Documents\WINFORMS projects\Solution\Application.BusinessLogic\obj\Debug\Application.BusinessLogic.Migrations.deleted_flagjob.resources

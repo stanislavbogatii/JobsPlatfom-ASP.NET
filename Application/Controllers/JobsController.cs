@@ -35,6 +35,18 @@ namespace Application.Controllers
         }
 
         [HttpPost]
+        public ActionResult DeleteJob(int jobId)
+        {
+            SimpleResponse response = _job.DeleteJobAction(jobId);
+            if (response.IsSuccess == true)
+                TempData["SuccessMessage"] = response.Msg;
+            else
+                TempData["ErrorMessage"] = response.Msg;
+
+            return RedirectToAction("MyJobs", "Jobs");
+        }
+
+        [HttpPost]
         public ActionResult ScheduleInterview(int jobIdInterview, int userIdInterview, string date, string location, string time)
         {
             SimpleResponse response = _job.ScheduleFeedbackAction(userIdInterview, jobIdInterview, date, time, location);
@@ -49,13 +61,20 @@ namespace Application.Controllers
         {
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
-            var job = _job.GetJobByIdAction(id);
+            if (session == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
+
+                var job = _job.GetJobByIdAction(id);
             var applications = _job.GetJobApplicationAction(id);
 
             if (job == null)
             {
                 return HttpNotFound();
             }
+
 
             var viewModel = new JobDetailsViewModel
             {
@@ -76,15 +95,28 @@ namespace Application.Controllers
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
             List<Job> jobs = _job.GetJobs(filter);
-            var viewModel = new JobsListViewModel
+            JobsListViewModel viewModel;
+            if (session == null)
             {
-                jobs = jobs,
-                filter = filter,
-                user = new UserData
+                viewModel = new JobsListViewModel
                 {
-                    Role = session.Role
-                }
-            };
+                    jobs = jobs,
+                    filter = filter,
+                    user = null
+                };
+             }
+            else
+            {
+                viewModel = new JobsListViewModel
+                {
+                    jobs = jobs,
+                    filter = filter,
+                    user = new UserData
+                    {
+                        Role = session.Role
+                    }
+                };
+            }
             return View(viewModel);
         }
 
@@ -92,7 +124,7 @@ namespace Application.Controllers
         {
             SessionStatus();
             var session = System.Web.HttpContext.Current.GetSessionData();
-
+            if (session == null) return RedirectToAction("Index", "Login");
 
             List<Job> jobs = _job.GetUserJobs(session.Email);
             var viewModel = new JobsListViewModel

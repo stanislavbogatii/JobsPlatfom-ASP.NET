@@ -36,6 +36,8 @@ namespace Application.Domain.Entities.Job
 
         public int OwnerId { get; set; }
 
+        public bool deleted { get; set; }
+
         public virtual UDbTable Owner { get; set; }
         public virtual ICollection<JobApplicationsDbTable> applications { get; set; }
         public virtual ICollection<InterviewDbTable> interviews { get; set; }

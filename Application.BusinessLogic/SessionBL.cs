@@ -26,6 +26,8 @@ namespace Application.BusinessLogic
             this.userApi = new UserApi();
         }
 
+
+
         public SimpleResponse UpdateUserPasswordAction(int id, string newPassword, string prevPassword)
         {
             return userApi.UpdateUserPasswordService(id, newPassword, prevPassword);

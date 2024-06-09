@@ -12,31 +12,51 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                @if (model.user.Role == "Employee")
+                @if (model.user != null)
+                {
+                    if (model.user.Role == "Employee")
+                    {
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@Url.Action("Index", "Jobs")">Jobs <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@Url.Action("Interviews", "Profile")">Interviews <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@Url.Action("Feedback", "Profile")">Feedback <span class="sr-only">(current)</span></a>
+                        </li>
+                    }
+                    if (model.user.Role == "Employer")
+                    {
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@Url.Action("MyJobs", "Jobs")">My jobs <span class="sr-only">(current)</span></a>
+                        </li>
+                    }
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Index", "Profile")">Profile</a>
+                    </li>
+                }
+                @if (model.user == null)
                 {
                     <li class="nav-item active">
                         <a class="nav-link" href="@Url.Action("Index", "Jobs")">Jobs <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="@Url.Action("Interviews", "Profile")">Interviews <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="@Url.Action("Feedback", "Profile")">Feedback <span class="sr-only">(current)</span></a>
-                    </li>
                 }
-                @if (model.user.Role == "Employer")
-                {
-                    <li class="nav-item active">
-                        <a class="nav-link" href="@Url.Action("MyJobs", "Jobs")">My jobs <span class="sr-only">(current)</span></a>
-                    </li>
-                }
-                <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("Index", "Profile")">Profile</a>
-                </li>
+
+
+
             </ul>
-            @using (Html.BeginForm("LogOut", "Base", FormMethod.Post))
+            @if (model.user != null)
             {
-                <button class="btn btn-outline-danger my-2 my-sm-0 ml-3" type="submit">Log out</button>
+                using (Html.BeginForm("LogOut", "Base", FormMethod.Post))
+                {
+                    <button class="btn btn-outline-danger my-2 my-sm-0 ml-3" type="submit">Log out</button>
+                }
+            }
+
+            @if (model.user == null)
+            {
+                    <a class="nav-link" href="@Url.Action("Index", "Login")">Login <span class="sr-only">(current)</span></a>
             }
         </div>
 

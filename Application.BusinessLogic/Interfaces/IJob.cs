@@ -21,5 +21,7 @@ namespace Application.BusinessLogic.Interfaces
         List<JobApplication> GetJobApplicationAction(int jobId);
         SimpleResponse ScheduleFeedbackAction(int userId, int jobId, string date, string time, string location);
         SimpleResponse SendFeedbackAction(int userId, int jobId);
+
+        SimpleResponse DeleteJobAction(int jobId);
     }
 }

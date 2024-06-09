@@ -6,16 +6,25 @@
 
 <div class="mt-3">
     <h1 style="margin-bottom: 20px; font-size: 86px">Jobs Platform</h1>
-    @if (Model.user.Role == "Employer")
+    @if (Model.user != null)
     {
-        <h3 style="max-width: 1000px; color: gray"> We are thrilled to have you here. Ready to find the perfect candidate for your team? Creating a job listing is quick and easy. Simply sign in, post your job, and start reviewing applications. Let’s connect you with top talent today!</h3>
-        <a href="@Url.Action("Create", "Jobs")" style="font-size: 24px">Create your job!</a>
+        if (Model.user.Role == "Employer")
+        {
+            <h3 style="max-width: 1000px; color: gray"> We are thrilled to have you here. Ready to find the perfect candidate for your team? Creating a job listing is quick and easy. Simply sign in, post your job, and start reviewing applications. Let’s connect you with top talent today!</h3>
+            <a href="@Url.Action("Create", "Jobs")" style="font-size: 24px">Create your job!</a>
 
+        }
+        if (Model.user.Role == "Employee")
+        {
+            <h3 style="max-width: 1000px; color: gray">We are thrilled to have you here. Ready to find your dream job? Creating a profile is quick and easy. Simply sign in, upload your resume, and start applying for jobs that match your skills and interests. Let’s connect you with top employers today!</h3>
+            <a href="@Url.Action("Index", "Jobs")" style="font-size: 24px">Choose your job!</a>
+        }
     }
-    @if (Model.user.Role == "Employee")
+    @if (Model.user == null)
     {
-        <h3 style="max-width: 1000px; color: gray">We are thrilled to have you here. Ready to find your dream job? Creating a profile is quick and easy. Simply sign in, upload your resume, and start applying for jobs that match your skills and interests. Let’s connect you with top employers today!</h3>
-        <a href="@Url.Action("Index", "Jobs")" style="font-size: 24px">Choose your job!</a>
+        <h3 style="max-width: 1000px; color: gray">Welcome to our platform, here you can find jobs or workers! Sign in for for greater opportunities! </h3>
+        <a href="@Url.Action("Index", "Login")" style="font-size: 24px">Login</a>
     }
+
 </div>
 

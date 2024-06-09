@@ -40,6 +40,17 @@ namespace Application.BusinessLogic.Core
             return new CreateJobResponse { IsSuccess = true, Msg = "Success create job" };
         }
 
+        public SimpleResponse DeleteJobService(int jobId)
+        {
+            using (var db = new UserContext())
+            {
+                JobDbTable job = db.Jobs.FirstOrDefault(j => j.Id == jobId);
+                job.deleted = true;
+                db.SaveChanges();
+                return new SimpleResponse { IsSuccess = true, Msg = "Success deleted job!" };
+            }
+        }
+
         public SimpleResponse SendFeedbackService(int userId, int jobId)
         {
             using (var db = new UserContext())
@@ -93,7 +104,9 @@ namespace Application.BusinessLogic.Core
             List<JobDbTable> jobs;
             using (var db = new UserContext())
             {
-                jobs = db.Jobs.Include(j => j.applications).ToList();
+                jobs = db.Jobs.Include(j => j.applications)
+                    .Where(j => j.deleted != true)
+                    .ToList();
             }
             List<Job> convertedJobs = jobs.Select(job =>
             {
@@ -200,6 +213,7 @@ namespace Application.BusinessLogic.Core
                 }
                 jobs = db.Jobs
                     .Include(j => j.applications)
+                    .Where(j => j.deleted != true)
                     .Where(job => job.OwnerId == user.Id)
                     .ToList();
             }
